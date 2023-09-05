@@ -23,10 +23,17 @@ import { getCartItems, removeFromCart } from '@/lib/utils';
 export const Navbar = () => {
 	// const [cartItems, setCartItems] = React.useState<CartItem[]>([]);
 
+<<<<<<< HEAD
 	// React.useEffect(() => {
 	// 	const items = getCartItems();
 	// 	setCartItems(items);
 	// }, []);
+=======
+	React.useEffect(() => {
+		const items = getCartItems();
+		setCartItems(items);
+	}, []);
+>>>>>>> emma
 
 	// const handleRemoveFromCart = (itemId: number): void => {
 	// 	removeFromCart(itemId);
