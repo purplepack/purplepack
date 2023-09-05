@@ -32,7 +32,8 @@ export default function Product({food}: {food: FoodI}) {
                 {food.description}
               </p>
             </div>
-            <div>
+            <div
+            >
               <Button
                 type="button"
                 variant="default"
