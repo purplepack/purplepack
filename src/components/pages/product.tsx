@@ -30,10 +30,10 @@ export default function Product() {
               <h1 className="font-bold text-2xl">Harvest Salad Bowl</h1>
               <p className="font-normal text-sm leading-6">
                 {`Not to be underestimated – our Harvest Bowl is seriously hearty.
-                        Warm the Smoked paprika sweet potato, chargrilled chicken, apple
-                        cubes and wild rice. Then toss with the mixed salad leaves and
-                        balsamic dressing and goat's cheese for a fresh and flavorsome
-                        bowlful that makes as good a dinner as it does lunch.`}
+                  Warm the Smoked paprika sweet potato, chargrilled chicken, apple
+                  cubes and wild rice. Then toss with the mixed salad leaves and
+                  balsamic dressing and goat's cheese for a fresh and flavorsome
+                  bowlful that makes as good a dinner as it does lunch.`}
               </p>
             </div>
             <div>
@@ -46,8 +46,8 @@ export default function Product() {
               </Button>
             </div>
             <Tabs defaultValue="regular" className="w-[400px] space-y-6 ">
-              <h1>Portion Size:</h1>
-              <TabsList className="grid w-full grid-cols-2 ">
+              <h1 className="font-semibold text-2xl">Portion Size:</h1>
+              <TabsList className="grid w-full grid-cols-2  ">
                 <TabsTrigger value="regular">Regular</TabsTrigger>
                 <TabsTrigger value="large">Large</TabsTrigger>
               </TabsList>
@@ -58,7 +58,6 @@ export default function Product() {
                       key={index}
                       className="border rounded-xl bg-transparent mx-2 px-4 py-2"
                     >
-                     
                       <p>
                         {item.quantity} {item.info}
                       </p>
@@ -72,8 +71,7 @@ export default function Product() {
                     <div
                       key={index}
                       className="border rounded-xl bg-transparent mx-2 px-4 py-2"
-                    >
-                     
+                    > 
                       <p>
                         {item.quantity1} {item.info1}
                       </p>
