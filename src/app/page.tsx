@@ -1,11 +1,13 @@
-import { Container } from '@/components/layout/container';
-import Product from '@/components/pages/product';
-
+import DiscoverSection from '@/components/discover-section';
+import HeroSection from '@/components/hero-section';
+import PickupSection from '@/components/ui/pickup-section';
 
 export default function Home() {
 	return (
-		<Container>
-			
-		</Container>
+		<main>
+			<HeroSection />
+			<PickupSection />
+			<DiscoverSection />
+		</main>
 	);
 }
