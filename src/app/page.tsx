@@ -1,10 +1,13 @@
-import { Container } from '@/components/layout/container';
-import { Button } from '@/components/ui/button';
+import DiscoverSection from '@/components/discover-section';
+import HeroSection from '@/components/hero-section';
+import PickupSection from '@/components/ui/pickup-section';
 
 export default function Home() {
 	return (
-		<Container>
-			<Button>This is a boy</Button>
-		</Container>
+		<main>
+			<HeroSection />
+			<PickupSection />
+			<DiscoverSection />
+		</main>
 	);
 }
