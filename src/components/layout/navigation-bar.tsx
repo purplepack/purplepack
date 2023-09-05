@@ -26,7 +26,7 @@ export const Navbar = () => {
 	React.useEffect(() => {
 		const items = getCartItems();
 		setCartItems(items);
-	}, [cartItems]);
+	}, []);
 
 	const handleRemoveFromCart = (itemId: number): void => {
 		removeFromCart(itemId);
