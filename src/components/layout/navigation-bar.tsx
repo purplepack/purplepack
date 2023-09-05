@@ -101,7 +101,7 @@ export const Navbar = () => {
 											{/* {cartItems.length > 0
 												? `You have the following items in your cart:`
 												: 'Your cart is empty'} */}
-												Your cart is empty
+											Your cart is empty
 										</SheetDescription>
 									</SheetHeader>
 									{/* <div className='grid gap-4 py-4'>
