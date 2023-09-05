@@ -6,7 +6,6 @@ export default function Home() {
 	return (
 		<Container>
 			
-			<Product/>
 		</Container>
 	);
 }
