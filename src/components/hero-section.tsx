@@ -15,7 +15,7 @@ export default function HeroSection() {
 			/>
 			<div className='absolute top-0 left-0 h-screen w-full'>
 				<Container>
-					<div className='h-screen flex flex-col justify-center px-3 gap-5 w-[400px] lg:w-[600px]'>
+					<div className='h-screen flex flex-col justify-center px-3 gap-5 max-w-[400px] lg:w-[600px]'>
 						<div className='text-2xl lg:text-3xl'>
 							Irresistible, Fresh & Authentic
 						</div>
