@@ -23,17 +23,10 @@ import { getCartItems, removeFromCart } from '@/lib/utils';
 export const Navbar = () => {
 	// const [cartItems, setCartItems] = React.useState<CartItem[]>([]);
 
-<<<<<<< HEAD
 	// React.useEffect(() => {
 	// 	const items = getCartItems();
 	// 	setCartItems(items);
 	// }, []);
-=======
-	React.useEffect(() => {
-		const items = getCartItems();
-		setCartItems(items);
-	}, []);
->>>>>>> emma
 
 	// const handleRemoveFromCart = (itemId: number): void => {
 	// 	removeFromCart(itemId);
@@ -108,7 +101,7 @@ export const Navbar = () => {
 											{/* {cartItems.length > 0
 												? `You have the following items in your cart:`
 												: 'Your cart is empty'} */}
-												Your cart is empty
+											Your cart is empty
 										</SheetDescription>
 									</SheetHeader>
 									{/* <div className='grid gap-4 py-4'>
