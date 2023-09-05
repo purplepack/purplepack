@@ -12,28 +12,24 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { Table, TableBody, TableCell, TableRow } from "../ui/table";
 import { MealGauge, MealGauge1, NutritionalInformation } from "@/lib/const";
 
-export default function Product() {
+export default function Product({food}: {food: FoodI}) {
   return (
-    <>
+    <div className="pt-32">
       <div className=" p-6 object-contain">
         <div className="flex flex-col md:flex-row gap-8">
           <Image
             className="w-[700px] h-[700px]"
             width={700}
             height={700}
-            src="/image4.jpg"
+            src={food.image}
             alt="Harvest Salad Bowl"
           />
 
           <div className="flex flex-col justify-around">
             <div className="mb-4 space-y-3">
-              <h1 className="font-bold text-2xl">Harvest Salad Bowl</h1>
+              <h1 className="font-bold text-2xl">{food.name}</h1>
               <p className="font-normal text-sm leading-6">
-                {`Not to be underestimated – our Harvest Bowl is seriously hearty.
-                  Warm the Smoked paprika sweet potato, chargrilled chicken, apple
-                  cubes and wild rice. Then toss with the mixed salad leaves and
-                  balsamic dressing and goat's cheese for a fresh and flavorsome
-                  bowlful that makes as good a dinner as it does lunch.`}
+                {food.description}
               </p>
             </div>
             <div>
@@ -85,7 +81,7 @@ export default function Product() {
               <AccordionItem value="item-1">
                 <AccordionTrigger>Details</AccordionTrigger>
                 <AccordionContent>
-                  {`Not to be underestimated – our Harvest Bowl is seriously hearty. Warm the Smoked paprika sweet potato, chargrilled chicken, apple cubes and wild rice. Then toss with the mixed salad leaves and balsamic dressing and goats cheese for a fresh and flavoursome bowlful that makes as good a dinner as it does lunch.`}
+                  {food.description}
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
@@ -110,7 +106,7 @@ export default function Product() {
               <AccordionItem value="item-3">
                 <AccordionTrigger>Full Ingredients</AccordionTrigger>
                 <AccordionContent>
-                  {`Chicken, Sweet potato, Apple, Wild Rice, Goats cheese [Ingredients: Pasteurized goat's milk, salt, lactic starters, coagulant] (MILK), Yoghurt (MILK), Almonds (NUTS), Lemon Juice, Olive Oil, Balsamic Vinegar (SULPHITES), Mustard (MUSTARD), Honey, Garlic, Lemon Zest, Rapeseed oil, Thyme, Smoked Paprika, Salt, Black pepper, Mixed salad leaf`}
+                  {food.ingredients}
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -124,6 +120,6 @@ export default function Product() {
         <Separator orientation="vertical" className="bg-white"/>
         <div>{`Delivered to your door & ready in 3 minutes`}</div>
       </div>
-    </>
+    </div>
   );
 }

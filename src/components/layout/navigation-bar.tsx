@@ -21,18 +21,18 @@ import React from 'react';
 import { getCartItems, removeFromCart } from '@/lib/utils';
 
 export const Navbar = () => {
-	const [cartItems, setCartItems] = React.useState<CartItem[]>([]);
+	// const [cartItems, setCartItems] = React.useState<CartItem[]>([]);
 
-	React.useEffect(() => {
-		const items = getCartItems();
-		setCartItems(items);
-	}, [cartItems]);
+	// React.useEffect(() => {
+	// 	const items = getCartItems();
+	// 	setCartItems(items);
+	// }, []);
 
-	const handleRemoveFromCart = (itemId: number): void => {
-		removeFromCart(itemId);
-		const updatedCart = cartItems.filter((item) => item.id !== itemId);
-		setCartItems(updatedCart);
-	};
+	// const handleRemoveFromCart = (itemId: number): void => {
+	// 	removeFromCart(itemId);
+	// 	const updatedCart = cartItems.filter((item) => item.id !== itemId);
+	// 	setCartItems(updatedCart);
+	// };
 
 	return (
 		<div className='w-full bg-primary text-primary-foreground fixed z-50'>
@@ -87,23 +87,24 @@ export const Navbar = () => {
 										className='relative shrink-0 grow-0'
 									>
 										<ShoppingCart className='h-6 w-6 ' />
-										{cartItems.length > 0 && (
+										{/* {cartItems.length > 0 && (
 											<div className='absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 h-4 w-4 bg-destructive flex items-center justify-center text-md rounded-full'>
 												{cartItems.length}
 											</div>
-										)}
+										)} */}
 									</Button>
 								</SheetTrigger>
 								<SheetContent>
 									<SheetHeader>
 										<SheetTitle>CART</SheetTitle>
 										<SheetDescription>
-											{cartItems.length > 0
+											{/* {cartItems.length > 0
 												? `You have the following items in your cart:`
-												: 'Your cart is empty'}
+												: 'Your cart is empty'} */}
+												Your cart is empty
 										</SheetDescription>
 									</SheetHeader>
-									<div className='grid gap-4 py-4'>
+									{/* <div className='grid gap-4 py-4'>
 										{cartItems.map((item, k) => (
 											<div
 												className='flex items-center justify-between'
@@ -147,7 +148,7 @@ export const Navbar = () => {
 												Make Order
 											</Button>
 										</SheetClose>
-									</SheetFooter>
+									</SheetFooter> */}
 								</SheetContent>
 							</Sheet>
 							<Sheet>
