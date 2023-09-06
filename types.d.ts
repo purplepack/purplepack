@@ -16,3 +16,23 @@ interface FoodI{
 	   value: string;
     } []
 }
+
+interface AboutCardI {
+	image: string;
+	title: string;
+	description: string;
+	bgcolor: string;
+	txtcolor: string;
+}
+
+interface QuestionCardI {
+	image: string;
+	title: string;
+	description: string;
+}
+
+interface ContactCardI {
+	icon: string;
+	title: string;
+	description: string;
+}
