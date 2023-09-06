@@ -71,13 +71,13 @@ export default function Enquiries() {
 					onChange={handleChange}
 					required
 				/>
-				<Button
-					className=' bg-black'
-					onClick={generateWhatsAppLink}
-				>
-					SUBMIT
-				</Button>
 			</form>
+			<Button
+				className=' bg-black'
+				onClick={generateWhatsAppLink}
+			>
+				SUBMIT
+			</Button>
 		</div>
 	);
 }
