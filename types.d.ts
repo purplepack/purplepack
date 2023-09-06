@@ -16,3 +16,9 @@ interface FoodI{
 	   value: string;
     } []
 }
+interface FoodP{
+    name: string;
+    slug: string;
+    description: string;
+    image: string;
+}
