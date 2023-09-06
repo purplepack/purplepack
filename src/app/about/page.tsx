@@ -10,7 +10,7 @@ export default function AboutPage() {
 	return (
 		<>
 			<section className=' bg-white'>
-				<div className='p-3 md:pt-36'>
+				<div className='md:pt-32'>
 					<div className=''>
 						{ABOUT_CARD.map((card, k) => (
 							<AboutCard
@@ -27,7 +27,7 @@ export default function AboutPage() {
 			</section>
 			<section className=''>
 				<div className='w-full mb-5'>
-					<div className=' flex justify-center text-4xl font-bold pt-10'>
+					<div className=' flex w-full text-center text-4xl font-bold p-5'>
 						Why choose Purplepack?
 					</div>
 					<div className='flex flex-col gap-10 justify-center md:flex-row'>
@@ -47,17 +47,17 @@ export default function AboutPage() {
 						asChild
 					>
 						<Link
-							href={'/'}
+							href={'/kitchen'}
 							className='shrink-0 whitespace-nowrap'
 						>
-							START ORDER
+							VISIT KITCHEN
 						</Link>
 					</Button>
 				</div>
 			</section>
 			<section className=''>
 				<div className='p-5'>
-					<div className='w-full flex justify-center font-bold text-4xl'>
+					<div className='w-full flex text-center font-bold text-4xl'>
 						Get in touch with our team:
 					</div>
 					<div className='flex flex-col gap-10 justify-center md:flex-row'>
