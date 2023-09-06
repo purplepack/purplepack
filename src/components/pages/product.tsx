@@ -45,71 +45,6 @@ export default function Product({ food }: { food: FoodI }) {
 									PURCHASE FROM CLOSEST STORE
 								</Button>
 							</div>
-							{/* <Tabs
-								defaultValue='regular'
-								className='w-[400px] space-y-6 '
-							>
-								<h1 className='font-semibold text-2xl'>
-									Portion Size:
-								</h1>
-								<TabsList className='grid w-full grid-cols-2 bg-primary/30  '>
-									<TabsTrigger
-										className='text-primary'
-										value='regular'
-									>
-										Regular
-									</TabsTrigger>
-									<TabsTrigger
-										className='text-primary'
-										value='large'
-									>
-										Large
-									</TabsTrigger>
-								</TabsList>
-								<TabsContent value='regular'>
-									<div className='flex items-center text-center object-contain'>
-										{MealGauge.map(
-											(item, index) => (
-												<div
-													key={index}
-													className='border rounded-xl bg-transparent mx-2 px-4 py-2'
-												>
-													<p>
-														{
-															item.quantity
-														}{' '}
-														{
-															item.info
-														}
-													</p>
-												</div>
-											)
-										)}
-									</div>
-								</TabsContent>
-								<TabsContent value='large'>
-									<div className='flex items-center text-center object-contain'>
-										{MealGauge1.map(
-											(item, index) => (
-												<div
-													key={index}
-													className='border rounded-xl bg-transparent mx-2 px-4 py-2'
-												>
-													<p>
-														{
-															item.quantity1
-														}{' '}
-														{
-															item.info1
-														}
-													</p>
-												</div>
-											)
-										)}
-									</div>
-								</TabsContent>
-							</Tabs> */}
-
 							<Accordion
 								type='single'
 								collapsible
@@ -174,12 +109,12 @@ export default function Product({ food }: { food: FoodI }) {
 						orientation='vertical'
 						className='bg-white'
 					/>
-					<div className='max-w-[300px]'>{`100% satisfaction or your money back`}</div>
+					<div className='max-w-[300px]'>{`100% satisfaction`}</div>
 					<Separator
 						orientation='vertical'
 						className='bg-white'
 					/>
-					<div className='max-w-[300px]'>{`Delivered to your door & ready in 3 minutes`}</div>
+					<div className='max-w-[300px]'>{`Purchase at your local stores`}</div>
 				</div>
 			</div>
 		</Container>
