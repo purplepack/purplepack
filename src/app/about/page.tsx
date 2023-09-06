@@ -1,3 +1,4 @@
+import { Container } from '@/components/layout/container';
 import { Button } from '@/components/ui/button';
 import ContactCard from '@/emma/about_su/contact';
 import Enquiries from '@/emma/about_su/enquiries';
@@ -25,9 +26,9 @@ export default function AboutPage() {
 					</div>
 				</div>
 			</section>
-			<section className=''>
-				<div className='w-full mb-5'>
-					<div className=' flex w-full text-center text-4xl font-bold p-5'>
+			<Container>
+				<div className='w-full mb-5 pt-10'>
+					<div className=' flex w-full justify-center text-center text-4xl font-bold p-5'>
 						Why choose Purplepack?
 					</div>
 					<div className='flex flex-col gap-10 justify-center md:flex-row'>
@@ -54,10 +55,10 @@ export default function AboutPage() {
 						</Link>
 					</Button>
 				</div>
-			</section>
-			<section className=''>
+			</Container>
+			<Container>
 				<div className='p-5'>
-					<div className='w-full flex text-center font-bold text-4xl'>
+					<div className='w-full flex  justify-center text-center font-bold text-4xl'>
 						Get in touch with our team:
 					</div>
 					<div className='flex flex-col gap-10 justify-center md:flex-row'>
@@ -77,21 +78,21 @@ export default function AboutPage() {
 						asChild
 					>
 						<Link
-							href={'/'}
+							href={'/faqs'}
 							className='shrink-0 whitespace-nowrap'
 						>
 							FAQS
 						</Link>
 					</Button>
 				</div>
-			</section>
+			</Container>
 			<section className=' bg-white text-black py-12'>
-				<div>
+				<Container>
 					<div className=' font-bold flex justify-center text-2xl'>
 						General Enquiries
 					</div>
 					<Enquiries />
-				</div>
+				</Container>
 			</section>
 		</>
 	);
