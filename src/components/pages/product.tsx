@@ -103,17 +103,11 @@ export default function Product({ food }: { food: FoodI }) {
 						</div>
 					</div>
 				</div>
-				<div className='flex items-center  justify-around text-center h-32 text-foreground px-3 font-bold text-2xl bg-primary/30 rounded-xl'>
+				<div className='flex flex-col md:flex-row items-center  justify-around gap-5 text-center text-foreground px-3 py-8  font-bold text-sm md:text-xl bg-primary/30 rounded-xl'>
 					<div className='max-w-[300px]'>{`Our chefs freshly prepare your food`}</div>
-					<Separator
-						orientation='vertical'
-						className='bg-white'
-					/>
+					<Separator className='bg-white h-0.5 w-20 md:h-10 md:w-0.5 lg:flex' />
 					<div className='max-w-[300px]'>{`100% satisfaction`}</div>
-					<Separator
-						orientation='vertical'
-						className='bg-white'
-					/>
+					<Separator className='bg-white h-0.5 w-20 md:h-10 md:w-0.5 lg:flex' />
 					<div className='max-w-[300px]'>{`Purchase at your local stores`}</div>
 				</div>
 			</div>

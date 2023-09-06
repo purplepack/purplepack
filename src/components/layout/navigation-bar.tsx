@@ -63,12 +63,9 @@ export const Navbar = () => {
 							))}
 							<Button
 								asChild
-								variant='outline'
-								className='bg-background text-primary'
+								variant='ghost'
 							>
-								<Link href='/about'>
-									Purchase From Store Near You
-								</Link>
+								<Link href='/about'>VISIT STORE</Link>
 							</Button>
 						</div>
 						<div className='flex gap-2'>
