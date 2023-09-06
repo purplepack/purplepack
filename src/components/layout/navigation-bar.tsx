@@ -19,21 +19,9 @@ import { NAVBAR_ITEMS, PROFILE } from '@/lib/data';
 import { HamburgerMenuIcon, TrashIcon } from '@radix-ui/react-icons';
 import React from 'react';
 import { getCartItems, removeFromCart } from '@/lib/utils';
+import { ModeSwitch } from '../mode-switch';
 
 export const Navbar = () => {
-	// const [cartItems, setCartItems] = React.useState<CartItem[]>([]);
-
-	// React.useEffect(() => {
-	// 	const items = getCartItems();
-	// 	setCartItems(items);
-	// }, []);
-
-	// const handleRemoveFromCart = (itemId: number): void => {
-	// 	removeFromCart(itemId);
-	// 	const updatedCart = cartItems.filter((item) => item.id !== itemId);
-	// 	setCartItems(updatedCart);
-	// };
-
 	return (
 		<div className='w-full bg-primary text-primary-foreground fixed z-50'>
 			<div className='bg-foreground/80 px-3 py-2'>
@@ -199,6 +187,7 @@ export const Navbar = () => {
 									</div>
 								</SheetContent>
 							</Sheet>
+							<ModeSwitch />
 						</div>
 					</div>
 				</Container>
