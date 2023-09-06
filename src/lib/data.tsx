@@ -5,7 +5,7 @@ export const PROFILE = {
 
 export const NAVBAR_ITEMS = [
 	{ name: 'ABOUT', href: '/about' },
-	{ name: 'FAQ', href: '/faq' },
+	{ name: 'FAQS', href: '/faqs' },
 	{ name: 'KITCHEN', href: '/kitchen' },
 ];
 
