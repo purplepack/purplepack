@@ -12,6 +12,7 @@ export default function Enquiries() {
 	});
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+		e.preventDefault();
 		const { name, value } = e.target;
 		setFormData({ ...formData, [name]: value });
 	};
