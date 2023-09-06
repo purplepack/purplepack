@@ -22,3 +22,17 @@ interface FoodP {
 	description: string;
 	image: string;
 }
+
+interface ContactCardI {
+	icon: string;
+	title: string;
+	description: string;
+}
+
+interface AboutCardI {
+	image: string;
+	title: string;
+	description: string;
+	bgcolor: string;
+	txtcolor: string;
+}
