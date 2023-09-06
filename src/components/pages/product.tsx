@@ -114,7 +114,7 @@ export default function Product({food}: {food: FoodI}) {
           </div>
         </div>
       </div>
-      <div className="flex items-center text-center space-x-2 h-32 text-white font-bold text-2xl bg-secondary">
+      <div className="flex items-center text-center space-x-2 h-32 py-6 text-white font-bold text-2xl bg-secondary">
         <div>{`Our chefs freshly prepare your food`}</div>
         <Separator orientation="vertical" className="bg-white"/>
         <div>{`100% satisfaction or your money back`}</div>

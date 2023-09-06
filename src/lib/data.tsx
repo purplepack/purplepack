@@ -345,3 +345,12 @@ export const HOW_IT_WORKS = [
 			'Savor every bite of your flavorful meal from our restaurant – a culinary delight awaits!',
 	},
 ];
+export const KITCHENMENU: FoodP[] = [
+	{
+		name : 'BEEF AND ROMESCO SAUCE',
+		slug : 'beef-and-romesco-sauce',
+		image : '/image7.JPG',
+		description : 'with roasted broccoli, roast vegetable quinoa and toasted almonds',
+	},
+
+]

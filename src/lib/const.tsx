@@ -46,3 +46,77 @@ export const NutritionalInformation = [
         quantity : "0.9g"
     },
 ]
+export const frameworks = [
+    {
+      value: "alcohol",
+      label: "Alcohol",
+    },
+    {
+      value: "celery",
+      label: "Celery",
+    },
+    {
+      value: "crustaceans",
+      label: "Crustaceans",
+    },
+    {
+      value: "egg",
+      label: "Egg",
+    },
+    {
+      value: "fish",
+      label: "Fish",
+    },
+    {
+      value: "gluten",
+      label: "Gluten",
+    },
+    {
+      value: "lupin",
+      label: "Lupin",
+    },
+    {
+      value: "meat",
+      label: "Meat",
+    },
+    {
+      value: "milk",
+      label: "Milk",
+    },
+    {
+      value: "molluscs",
+      label: "Molluscs",
+    },
+    {
+      value: "mustard",
+      label: "Mustard",
+    },
+    {
+      value: "nuts",
+      label: "Nuts",
+    },
+    {
+      value: "peanuts",
+      label: "Peanuts",
+    },
+    {
+      value: "pork",
+      label: "Pork",
+    },
+    {
+      value: "sesame",
+      label: "Sesame",
+    },
+    {
+      value: "soya",
+      label: "Soya",
+    },
+    {
+      value: "spice",
+      label: "Spice",
+    },
+    {
+      value: "sulphites",
+      label: "Sulphites",
+    },
+  ]
