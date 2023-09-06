@@ -14,15 +14,15 @@ export default function MenuCard({
 	description,
 	href,
 	price,
-	onClick,
-}: {
+}: // onClick,
+{
 	image: string;
 	name: string;
 	hoverImage: string;
 	description: string;
 	href: string;
 	price: number;
-	onClick: () => void;
+	// onClick: () => void;
 }) {
 	const [hovered, setHovered] = React.useState<boolean>(false);
 
@@ -54,7 +54,7 @@ export default function MenuCard({
 				</div>
 			</Link>
 
-			<div className='grid grid-cols-2 gap-2'>
+			{/* <div className='grid grid-cols-2 gap-2'>
 				<Button
 					className='flex'
 					onClick={onClick}
@@ -63,7 +63,7 @@ export default function MenuCard({
 					<span className='hidden md:flex'>Add To Cart</span>
 				</Button>
 				<Button variant='ghost'>{formatAmount(price)}</Button>
-			</div>
+			</div> */}
 		</div>
 	);
 }
