@@ -54,16 +54,17 @@ export default function MenuCard({
 				</div>
 			</Link>
 
-			{/* <div className='grid grid-cols-2 gap-2'>
+			<div className='grid grid-cols-2 gap-2'>
 				<Button
+					disabled
 					className='flex'
-					onClick={onClick}
+					// onClick={onClick}
 				>
 					<ShoppingCart className='h-4 w-4 md:hidden' />{' '}
 					<span className='hidden md:flex'>Add To Cart</span>
 				</Button>
 				<Button variant='ghost'>{formatAmount(price)}</Button>
-			</div> */}
+			</div>
 		</div>
 	);
 }

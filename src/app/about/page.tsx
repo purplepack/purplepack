@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Button } from "@/components/ui/button";
 import ContactCard from "@/emma/about_su/contact";
 import Enquiries from "@/emma/about_su/enquiries";
@@ -89,4 +90,10 @@ export default function AboutPage() {
       </section>
     </>
   );
+=======
+import React from 'react';
+
+export default function About() {
+	return <div className='grid min-h-[500px] place-items-center'>About</div>;
+>>>>>>> emeka
 }

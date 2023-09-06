@@ -16,6 +16,7 @@ interface FoodI{
 	   value: string;
     } []
 }
+<<<<<<< HEAD
 
 interface AboutCardI {
 	image: string;
@@ -35,4 +36,11 @@ interface ContactCardI {
 	icon: string;
 	title: string;
 	description: string;
+=======
+interface FoodP{
+    name: string;
+    slug: string;
+    description: string;
+    image: string;
+>>>>>>> emeka
 }

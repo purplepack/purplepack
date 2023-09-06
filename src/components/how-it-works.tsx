@@ -10,8 +10,8 @@ export default function HowItWorks() {
 			<Container>
 				<div className='px-5 flex flex-col gap-5 items-center'>
 					<h1 className='text-3xl font-bold'>HOW IT WORKS</h1>
-					<div className='grid grid-cols-1 gap-5 md:grid-cols-2 w-full'>
-						<Card className='h-96 w-full overflow-hidden'>
+					<div className='flex flex-col md:flex-row gap-5 w-full'>
+						<Card className='w-full aspect-square overflow-hidden'>
 							<Image
 								src='/image20.JPG'
 								height={400}
@@ -20,21 +20,21 @@ export default function HowItWorks() {
 								className='h-full w-full object-top object-cover'
 							/>
 						</Card>
-						<div className='h-96 w-full'>
-							<div className='flex flex-col justify-center h-full gap-5'>
+						<div className='w-full'>
+							<div className='flex flex-col justify-center h-full gap-6'>
 								{HOW_IT_WORKS.map((hiw, k) => (
 									<div
-										className='flex items-center gap-5'
+										className='flex flex-col text-center md:text-start md:flex-row items-center gap-2 md:gap-5'
 										key={k}
 									>
 										<div className='text-4xl font-bold'>
 											{hiw.step}
 										</div>
 										<div className='flex flex-col gap-2'>
-											<div className='text-xl font-bold'>
+											<div className='text-sm md:text-xl font-bold'>
 												{hiw.title}
 											</div>
-											<div className=''>
+											<div className='text-xs md:text-sm'>
 												{hiw.description}
 											</div>
 										</div>

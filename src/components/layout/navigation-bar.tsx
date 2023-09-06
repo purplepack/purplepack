@@ -19,26 +19,14 @@ import { NAVBAR_ITEMS, PROFILE } from '@/lib/data';
 import { HamburgerMenuIcon, TrashIcon } from '@radix-ui/react-icons';
 import React from 'react';
 import { getCartItems, removeFromCart } from '@/lib/utils';
+import { ModeSwitch } from '../mode-switch';
 
 export const Navbar = () => {
-	// const [cartItems, setCartItems] = React.useState<CartItem[]>([]);
-
-	// React.useEffect(() => {
-	// 	const items = getCartItems();
-	// 	setCartItems(items);
-	// }, []);
-
-	// const handleRemoveFromCart = (itemId: number): void => {
-	// 	removeFromCart(itemId);
-	// 	const updatedCart = cartItems.filter((item) => item.id !== itemId);
-	// 	setCartItems(updatedCart);
-	// };
-
 	return (
 		<div className='w-full bg-primary text-primary-foreground fixed z-50'>
 			<div className='bg-foreground/80 px-3 py-2'>
 				<Container>
-					<div className='grid place-items-center'>
+					<div className='grid place-items-center text-xs sm:text-base'>
 						Get 20% off your first order. Subscribe
 					</div>
 				</Container>
@@ -46,7 +34,10 @@ export const Navbar = () => {
 			<div className='px-3 py-2'>
 				<Container>
 					<div className='flex justify-between items-center gap-3'>
-						<div className='h-12 md:h-20 shrink-0 grow-0 flex items-center gap-2'>
+						<Link
+							href='/'
+							className='h-12 md:h-20 shrink-0 grow-0 flex items-center gap-2'
+						>
 							<Image
 								src={'/logo.png'}
 								height={80}
@@ -54,10 +45,10 @@ export const Navbar = () => {
 								alt='Purple Pack Logo'
 								className='w-full h-full object-contain'
 							/>
-							<div className=' whitespace-nowrap uppercase'>
+							<div className='hidden md:flex whitespace-nowrap uppercase'>
 								{PROFILE.name}
 							</div>
-						</div>
+						</Link>
 						<div className='w-full md:flex justify-end gap-2 hidden '>
 							{NAVBAR_ITEMS.map((item, k) => (
 								<Button
@@ -75,7 +66,9 @@ export const Navbar = () => {
 								variant='outline'
 								className='bg-background text-primary'
 							>
-								<Link href='/kitchen'>ORDER NOW</Link>
+								<Link href='/about'>
+									Purchase From Store Near You
+								</Link>
 							</Button>
 						</div>
 						<div className='flex gap-2'>
@@ -194,6 +187,7 @@ export const Navbar = () => {
 									</div>
 								</SheetContent>
 							</Sheet>
+							<ModeSwitch />
 						</div>
 					</div>
 				</Container>
