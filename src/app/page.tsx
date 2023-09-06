@@ -3,6 +3,7 @@ import HeroSection from '@/components/hero-section';
 import HowItWorks from '@/components/how-it-works';
 import OurStory from '@/components/our-story';
 import PickupSection from '@/components/ui/pickup-section';
+import Why from '@/components/why-choose-purple';
 
 export default function Home() {
 	return (
@@ -12,6 +13,7 @@ export default function Home() {
 			<DiscoverSection />
 			<OurStory />
 			<HowItWorks />
+			<Why />
 		</main>
 	);
 }

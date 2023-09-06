@@ -8,8 +8,8 @@ import { Button } from './button';
 export default function PickupSection() {
 	return (
 		<Container>
-			<div className='flex h-36 items-center justify-around my-10 text-sm'>
-				<div className='flex flex-col md:flex-row gap-3'>
+			<div className='flex gap-5 flex-col md:flex-row md:h-36 px-3 md:px-5 items-center justify-between md:justify-around mt-10 text-sm'>
+				<div className='flex flex-col md:flex-row justify-center items-center gap-3 text-center'>
 					<div className='h-20 w-20 bg-primary rounded-full text-white flex items-center justify-center'>
 						<ShoppingBasket className='w-10 h-10' />
 					</div>
@@ -34,7 +34,7 @@ export default function PickupSection() {
 					orientation='vertical'
 					className='bg-primary hidden lg:flex'
 				/>
-				<div className='flex gap-3'>
+				<div className='flex flex-col md:flex-row justify-center items-center gap-3 text-center'>
 					<div className='h-20 w-20 bg-primary rounded-full text-white flex items-center justify-center'>
 						<ChatBubbleIcon className='w-10 h-10' />
 					</div>

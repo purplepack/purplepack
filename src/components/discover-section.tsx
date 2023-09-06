@@ -15,11 +15,11 @@ export default function DiscoverSection() {
 	// 	setCartItems([...cartItems, item]);
 	// };
 	return (
-		<div className='px-5 py-20 flex flex-col gap-5 items-center'>
-			<h1 className='text-3xl md:mb-5 font-bold'>
+		<div className='px-5 py-20 flex flex-col gap-5 items-center overflow-hidden'>
+			<h1 className='text-xl sm:text-3xl md:mb-5 font-bold'>
 				DISCOVER OUR RANGE
 			</h1>
-			<div className='flex gap-5 md:mb-5 flex-nowrap justify-center w-full'>
+			<div className='flex flex-wrap gap-5 md:mb-5 justify-around md:justify-center w-full'>
 				{MENU_NEW.map((item, k) => (
 					<MenuCard
 						key={k}
