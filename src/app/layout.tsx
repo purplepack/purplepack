@@ -4,12 +4,13 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Navbar } from '@/components/layout/navigation-bar';
 import Footer from '@/components/layout/footer';
+import { PROFILE } from '@/lib/data';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'Purple Pack Foods',
-	description: 'Welcome to Purple pack (African, Flavorful, Irresistible)',
+	title: PROFILE.name,
+	description: `Welcome to ${PROFILE.name} (African, Flavorful, Irresistible)`,
 };
 
 export default function RootLayout({

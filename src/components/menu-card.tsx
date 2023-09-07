@@ -1,9 +1,9 @@
 'use client';
 import Image from 'next/image';
 import { Card } from './ui/card';
-import React, { Dispatch } from 'react';
+import React from 'react';
 import { Button } from './ui/button';
-import { addToCart, formatAmount, truncateParagraph } from '@/lib/utils';
+import { truncateParagraph } from '@/lib/utils';
 import Link from 'next/link';
 import { ShoppingCart } from 'lucide-react';
 
@@ -14,15 +14,13 @@ export default function MenuCard({
 	description,
 	href,
 	price,
-}: // onClick,
-{
+}: {
 	image: string;
 	name: string;
 	hoverImage: string;
 	description: string;
 	href: string;
 	price: number;
-	// onClick: () => void;
 }) {
 	const [hovered, setHovered] = React.useState<boolean>(false);
 
@@ -54,16 +52,18 @@ export default function MenuCard({
 				</div>
 			</Link>
 
-			<div className='grid grid-cols-2 gap-2'>
+			<div className='grid gap-2'>
 				<Button
 					disabled
 					className='flex'
 					// onClick={onClick}
 				>
 					<ShoppingCart className='h-4 w-4 md:hidden' />{' '}
-					<span className='hidden md:flex'>Add To Cart</span>
+					<span className='hidden md:flex text-xs'>
+						Add to Basket (Coming Soon)
+					</span>
 				</Button>
-				<Button variant='ghost'>{formatAmount(price)}</Button>
+				{/* <Button variant='ghost'>{formatAmount(price)}</Button> */}
 			</div>
 		</div>
 	);

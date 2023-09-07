@@ -36,3 +36,20 @@ interface AboutCardI {
 	bgcolor: string;
 	txtcolor: string;
 }
+
+interface DataTableProps<TData, TValue> {
+	columns: ColumnDef<TData, TValue>[];
+	data: TData[];
+	showSearch?: boolean;
+	showColumns?: boolean;
+	searchWith?: string;
+}
+
+interface Location {
+	name: string;
+	address: string;
+	coordinates: { lat: number; lon: number };
+	city: string;
+	state: string;
+	zip: string;
+}

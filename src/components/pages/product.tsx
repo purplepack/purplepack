@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
 import { Button } from '../ui/button';
@@ -8,12 +9,12 @@ import {
 	AccordionTrigger,
 } from '../ui/accordion';
 import { Separator } from '../ui/separator';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
 import { Table, TableBody, TableCell, TableRow } from '../ui/table';
-import { MealGauge, MealGauge1, NutritionalInformation } from '@/lib/const';
 import { Container } from '../layout/container';
+import Link from 'next/link';
 
 export default function Product({ food }: { food: FoodI }) {
+	const [hovered, setHovered] = React.useState<boolean>(false);
 	return (
 		<Container>
 			<div className='pt-32'>
@@ -23,8 +24,10 @@ export default function Product({ food }: { food: FoodI }) {
 							className='w-full aspect-square rounded-3xl'
 							width={700}
 							height={700}
-							src={food.image}
+							src={hovered ? food.hoverImage : food.image}
 							alt='Harvest Salad Bowl'
+							onMouseEnter={() => setHovered(true)}
+							onMouseLeave={() => setHovered(false)}
 						/>
 
 						<div className='flex flex-col justify-start'>
@@ -41,14 +44,18 @@ export default function Product({ food }: { food: FoodI }) {
 									type='button'
 									variant='default'
 									className='w-full text-white font-semibold h-12 text-lg '
+									asChild
 								>
-									PURCHASE FROM CLOSEST STORE
+									<Link href='/about#store-locator'>
+										PURCHASE FROM CLOSEST STORE
+									</Link>
 								</Button>
 							</div>
 							<Accordion
 								type='single'
 								collapsible
 								className='w-full'
+								defaultValue='item-1'
 							>
 								<AccordionItem value='item-1'>
 									<AccordionTrigger>

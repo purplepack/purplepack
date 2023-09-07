@@ -53,14 +53,14 @@ export const ABOUT_CARD = [
 	{
 		image: '/image2.JPG',
 		title: 'Our mission: help everyone build good food habits',
-		description: `Our founder, Will, has always loved food. While living in New York and holding down a stressful job, this took an unhealthy turn. Will didn’t enjoy cooking for one - the reward didn’t justify the shopping, prepping and cooking. But eating out and taking shortcuts took a toll on his happiness and his waistline. Getting back into healthy food habits gave Will the power to transform his life. The secret? Eating fresh pre-prepared meals that didn’t compromise on ingredients, flavour or nutrition. When he moved back to the UK, Will couldn’t find a service anything like as good as he was used to - so he started Tastily.`,
+		description: `Information of the founder goes here.`,
 		bgcolor: `bg-black`,
 		txtcolor: `text-white`,
 	},
 	{
 		image: '/image8.JPG',
 		title: `Our Chefs are your Chefs`,
-		description: `Flavour is at the top of our priority list. We believe that delicious food shouldn’t be kept for Friday nights, BBQ Saturdays or slow cooked Sundays. Our chefs’ skill is making fantastic food that tastes great and does you good everyday. We push the boundaries of pre-made meals, creating food that’s ready for you to bring to perfection in just 3 minutes. Every dish is made fresh to order - we’re looking forward to cooking yours!`,
+		description: `Flavour is at the top of our priority list. We believe that delicious food shouldn’t be kept for Friday nights, BBQ Saturdays or slow cooked Sundays. Our chefs’ skill is making fantastic food that tastes great and does you good everyday. We push the boundaries of pre-made meals, creating food that’s ready for you to bring to perfection in just 3 minutes. We’re looking forward to cooking yours!`,
 		bgcolor: `bg-red-500`,
 		txtcolor: `text-black`,
 	},
@@ -107,21 +107,21 @@ export const CONTACT_CARD = [
 	{
 		icon: '/images/service-icn.webp',
 		title: `Customer Service`,
-		description: `For everything related to our service and your Tastily account, get in touch with our customer service team`,
+		description: `For everything related to our service, get in touch with our customer service team.`,
 	},
 	{
 		icon: '/images/mkting-icn.webp',
 		title: `Marketing`,
-		description: `Want to work on a partnership or campaign together? Email our marketing team:`,
+		description: `Want to work on a partnership or campaign together? Contact our marketing team.`,
 	},
 	{
 		icon: '/images/pr-icn.webp',
 		title: `PR`,
-		description: `For PR enquiries please contact us here:`,
+		description: `For PR enquiries please contact our PR team.`,
 	},
 	{
 		icon: '/images/meal-icn.webp',
 		title: `Meal Collab`,
-		description: `Are you a chef with a delicious recipe you’d like to collaborate with us on, or is there a dish you want to see on our menu? Email our kitchen team:`,
+		description: `Are you a chef with a delicious recipe you’d like to collaborate with us on, or is there a dish you want to see on our menu? Contact us.`,
 	},
 ];

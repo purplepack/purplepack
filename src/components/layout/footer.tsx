@@ -21,8 +21,10 @@ export default function Footer() {
 						<Separator className='bg-white h-0.5 w-20 md:h-10 md:w-0.5 lg:flex' />
 						<div className='w-32 flex flex-col items-center'>
 							<div className=''>Whatsapp</div>
-							<Link href='https://wa.me/2348061719533'>
-								+18061719533
+							<Link
+								href={`https://wa.me/${PROFILE.phone}`}
+							>
+								{`+${PROFILE.phone}`}
 							</Link>
 						</div>
 					</div>
@@ -41,7 +43,7 @@ export default function Footer() {
 									src={'/logo.png'}
 									height={80}
 									width={80}
-									alt='Purple Pack Logo'
+									alt={`${PROFILE.name} Logo`}
 									className='w-20 h-20 object-contain'
 								/>
 								<div className='flex whitespace-nowrap uppercase text-xl'>
@@ -95,8 +97,7 @@ export default function Footer() {
 			<div className='bg-black/60'>
 				<Container>
 					<div className='p-3 text-center'>
-						© Copyright 2023 Purple Pack Ltd. All rights
-						reserved
+						{`© Copyright 2023 ${PROFILE.name} Ltd. All rights reserved`}
 					</div>
 				</Container>
 			</div>

@@ -4,6 +4,7 @@ import { ChatBubbleIcon } from '@radix-ui/react-icons';
 import { ShoppingBasket } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from './button';
+import { PROFILE } from '@/lib/data';
 
 export default function PickupSection() {
 	return (
@@ -22,7 +23,7 @@ export default function PickupSection() {
 							variant='link'
 						>
 							<Link
-								href='https://wa.me/2348061719533'
+								href='/about#store-locator'
 								className=''
 							>
 								Check Out Locations
@@ -47,7 +48,7 @@ export default function PickupSection() {
 							variant='link'
 						>
 							<Link
-								href='https://wa.me/2348061719533'
+								href={`https://wa.me/${PROFILE.phone}`}
 								className=''
 							>
 								Online support 24/7

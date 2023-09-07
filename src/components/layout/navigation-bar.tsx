@@ -1,32 +1,20 @@
 'use client';
 import Image from 'next/image';
 import { Container } from './container';
-import {
-	Sheet,
-	SheetClose,
-	SheetContent,
-	SheetDescription,
-	SheetFooter,
-	SheetHeader,
-	SheetTitle,
-	SheetTrigger,
-} from '../ui/sheet';
-import { Label } from '../ui/label';
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from '../ui/sheet';
 import { Button } from '../ui/button';
-import { ShoppingCart } from 'lucide-react';
 import Link from 'next/link';
 import { NAVBAR_ITEMS, PROFILE } from '@/lib/data';
-import { HamburgerMenuIcon, TrashIcon } from '@radix-ui/react-icons';
+import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import React from 'react';
-import { getCartItems, removeFromCart } from '@/lib/utils';
 import { ModeSwitch } from '../mode-switch';
 
 export const Navbar = () => {
 	return (
 		<div className='w-full bg-primary text-primary-foreground fixed z-50'>
-			<div className='bg-foreground/80 px-3 py-2'>
+			<div className='bg-background/80 px-3 py-2'>
 				<Container>
-					<div className='grid place-items-center text-xs sm:text-base'>
+					<div className='text-foreground grid place-items-center text-xs sm:text-base'>
 						Get 20% off your first order. Subscribe
 					</div>
 				</Container>
@@ -42,7 +30,7 @@ export const Navbar = () => {
 								src={'/logo.png'}
 								height={80}
 								width={80}
-								alt='Purple Pack Logo'
+								alt={`${PROFILE.name} Logo`}
 								className='w-full h-full object-contain'
 							/>
 							<div className='hidden md:flex whitespace-nowrap uppercase'>
@@ -65,7 +53,9 @@ export const Navbar = () => {
 								asChild
 								variant='ghost'
 							>
-								<Link href='/about'>VISIT STORE</Link>
+								<Link href='/about#store-locator'>
+									VISIT STORE
+								</Link>
 							</Button>
 						</div>
 						<div className='flex gap-2'>
@@ -90,7 +80,7 @@ export const Navbar = () => {
 												src={'/logo.png'}
 												height={80}
 												width={80}
-												alt='Purple Pack Logo'
+												alt={`${PROFILE.name} Logo`}
 												className='w-full h-full object-contain'
 											/>
 										</Link>

@@ -1,5 +1,6 @@
 'use client';
 import { Button } from '@/components/ui/button';
+import { PROFILE } from '@/lib/data';
 import React from 'react';
 
 export default function Enquiries() {
@@ -22,7 +23,7 @@ export default function Enquiries() {
 
 		// Build the WhatsApp link
 		const whatsappText = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0ASubject: ${subject}%0ABody: ${body}`;
-		const whatsappLink = `https://wa.me/2348061719533/?text=${whatsappText}`;
+		const whatsappLink = `https://wa.me/${PROFILE.phone}/?text=${whatsappText}`;
 
 		// Redirect the user to WhatsApp
 		window.location.href = whatsappLink;
@@ -72,12 +73,14 @@ export default function Enquiries() {
 					required
 				/>
 			</form>
-			<Button
-				className=' bg-black'
-				onClick={generateWhatsAppLink}
-			>
-				SUBMIT
-			</Button>
+			<div className='grid place-items-center'>
+				<Button
+					className='w-32'
+					onClick={generateWhatsAppLink}
+				>
+					SUBMIT
+				</Button>
+			</div>
 		</div>
 	);
 }
