@@ -74,7 +74,7 @@ export function DataTable<TData, TValue>({
 							<SearchIcon />
 						</div>
 						<Input
-							placeholder='Search agents'
+							placeholder={`Search ${searchWith}`}
 							value={
 								(table
 									.getColumn(searchWith || 'name')

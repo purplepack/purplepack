@@ -15,7 +15,7 @@ export const Navbar = () => {
 			<div className='bg-background/80 px-3 py-2'>
 				<Container>
 					<div className='text-foreground grid place-items-center text-xs sm:text-base'>
-						Get 20% off your first order. Subscribe
+						Ready to eat in no time
 					</div>
 				</Container>
 			</div>
