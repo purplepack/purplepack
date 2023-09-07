@@ -90,7 +90,10 @@ export default function AboutPage() {
 					</Button>
 				</div>
 			</Container>
-			<section className='py-12'>
+			<section
+				className='py-12'
+				id='contact'
+			>
 				<Container>
 					<div className=' font-bold flex justify-center text-2xl'>
 						General Enquiries

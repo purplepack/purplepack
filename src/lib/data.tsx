@@ -6,8 +6,10 @@ export const PROFILE = {
 
 export const NAVBAR_ITEMS = [
 	{ name: 'ABOUT', href: '/about' },
+	{ name: 'CONTACT', href: '/about#contact' },
 	{ name: 'FAQS', href: '/faqs' },
 	{ name: 'KITCHEN', href: '/kitchen' },
+	{ name: 'STORE LOCATOR', href: '/about#store-locator' },
 ];
 
 export const MENU: FoodI[] = [
