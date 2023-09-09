@@ -1,5 +1,6 @@
+import { PortableText } from '@portabletext/react';
 import { Container } from '@/components/layout/container';
-import { client } from '@/lib/sanity.client';
+import { client } from '../../../../sanity/lib/client';
 
 async function getData(slug: string) {
 	const query = `*[_type == 'post' && slug.current == "${slug}"][0]`;
@@ -12,7 +13,9 @@ export default async function Slug({ params }: { params: { slug: string } }) {
 
 	return (
 		<Container>
-			<div className='py-40'>Slug</div>
+			<div className='py-40'>
+				<PortableText value={data.body} />
+			</div>
 		</Container>
 	);
 }
