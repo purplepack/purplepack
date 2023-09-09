@@ -96,7 +96,7 @@ const StoreLocator = () => {
 							': ' +
 							closestStore.address
 						) : (
-							<Skeleton className='h-4 w-72 bg-primary' />
+							<Skeleton className='h-4 w-full max-w-[18rem] bg-primary' />
 						)}
 					</Label>
 					<Label className='flex gap-5'>Other Stores:</Label>

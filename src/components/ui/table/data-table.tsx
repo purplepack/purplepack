@@ -130,7 +130,7 @@ export function DataTable<TData, TValue>({
 				</div>
 			)}
 			<div className='rounded-md border'>
-				<Table>
+				<Table className=''>
 					<TableHeader>
 						{table.getHeaderGroups().map((headerGroup) => (
 							<TableRow key={headerGroup.id}>
@@ -152,7 +152,7 @@ export function DataTable<TData, TValue>({
 							</TableRow>
 						))}
 					</TableHeader>
-					<TableBody>
+					<TableBody className=''>
 						{table.getRowModel().rows?.length ? (
 							table.getRowModel().rows.map((row) => (
 								<TableRow
