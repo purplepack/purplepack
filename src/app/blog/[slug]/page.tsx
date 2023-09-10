@@ -1,6 +1,6 @@
 import { PortableText } from '@portabletext/react';
 import { Container } from '@/components/layout/container';
-import { client } from '../../../../sanity/lib/client';
+import { client } from '../../../sanity/lib/client';
 // import MuxPlayer from '@mux/mux-player-react';
 
 async function getData(slug: string) {

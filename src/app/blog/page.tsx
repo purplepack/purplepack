@@ -2,8 +2,8 @@ import { Container } from '@/components/layout/container';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { urlForImage } from '../../../sanity/lib/image';
-import { client } from '../../../sanity/lib/client';
+import { urlForImage } from '../../sanity/lib/image';
+import { client } from '../../sanity/lib/client';
 async function getData() {
 	const query = `*[_type == 'post']`;
 	const data = await client.fetch(query);
