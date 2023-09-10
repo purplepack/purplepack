@@ -53,3 +53,66 @@ interface Location {
 	state: string;
 	zip: string;
 }
+
+interface PostI {
+	title: string;
+	mainImage: {
+		_type: string;
+		alt: string;
+		asset: {
+			_ref: string;
+			_type: string;
+		};
+		crop: {
+			left: number;
+			bottom: number;
+			_type: string;
+			right: number;
+			top: number;
+		};
+		hotspot: {
+			width: number;
+			x: number;
+			y: number;
+			height: number;
+			_type: string;
+		};
+	};
+	body: {
+		style: string;
+		_key: string;
+		markDefs: [];
+		children: {
+			_type: string;
+			marks: [];
+			text: string;
+			_key: string;
+		}[];
+		_type: string;
+	}[];
+	video: {
+		_type: string;
+		asset: {
+			_weak: boolean;
+			_ref: string;
+			_type: string;
+		};
+	};
+	publishedAt: string;
+	author: {
+		_ref: string;
+		_type: string;
+	};
+	categories: string;
+	overview: string;
+	content: any;
+	_id: string;
+	_rev: string;
+	_type: string;
+
+	slug: {
+		_type: string;
+		current: string;
+	};
+	createdAt: string;
+}

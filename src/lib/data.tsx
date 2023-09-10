@@ -11,6 +11,7 @@ export const NAVBAR_ITEMS = [
 	{ name: 'FAQS', href: '/faqs' },
 	{ name: 'KITCHEN', href: '/kitchen' },
 	// { name: 'STORE LOCATOR', href: '/about#store-locator' },
+	{ name: 'BLOG', href: '/blog' },
 ];
 
 export const MENU: FoodI[] = [
