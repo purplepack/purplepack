@@ -51,7 +51,7 @@ export default function PickupSection() {
 								href={`https://wa.me/${PROFILE.phone}`}
 								className=''
 							>
-								Click Here
+								Online support 24/7
 							</Link>
 						</Button>
 					</div>
