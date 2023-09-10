@@ -329,7 +329,6 @@ export const FOOTER_LINKS = [
 			{ title: 'Egusi Soup', href: '/kitchen/egusi-soup' },
 			{ title: 'Jollof Rice', href: '/kitchen/jollof-rice' },
 			{ title: 'Ofada Rice', href: '/kitchen/olori-ofada' },
-			{ title: 'Ayamase Sauce', href: '/kitchen/ayamase-sauce' },
 		],
 	},
 ];
