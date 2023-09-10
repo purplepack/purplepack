@@ -11,7 +11,7 @@ async function getData() {
     mainImage,
     body,
     slug,
-    video,
+    preview->
   }`;
 	const data = await client.fetch(query);
 	return data;
@@ -19,6 +19,7 @@ async function getData() {
 
 export default async function Blog() {
 	const data = (await getData()) as PostI[];
+	console.log(data);
 	return (
 		<Container>
 			<div className='pt-32'>

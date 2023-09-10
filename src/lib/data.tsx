@@ -1,7 +1,7 @@
 export const PROFILE = {
 	name: 'Purple Pack',
 	description: 'Welcome to Purple pack (African, Flavourful, Irresistible)',
-	phone: '17835046640',
+	phone: '447835046640',
 	address: 'Hallam i-lab, Sheffield Hallam University, Level 6, Aspect Court, Sheffield, S1 2BG',
 };
 
@@ -57,7 +57,7 @@ export const MENU: FoodI[] = [
 		],
 	},
 	{
-		name: 'Olori Ofada & Ayamase Sauce',
+		name: 'Ofada rice and Ayamase',
 		slug: 'olori-ofada',
 		image: '/food/olori-ofada.JPG',
 		hoverImage: '/food/olori-ofada-hover.JPG',

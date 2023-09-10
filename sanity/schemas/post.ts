@@ -26,11 +26,6 @@ export default defineType({
 			to: { type: 'author' },
 		}),
 		defineField({
-			name: 'video',
-			title: 'Video File',
-			type: 'mux.video',
-		}),
-		defineField({
 			name: 'mainImage',
 			title: 'Main image',
 			type: 'image',

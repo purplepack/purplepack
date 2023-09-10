@@ -4,8 +4,7 @@ import blockContent from './schemas/blockContent';
 import category from './schemas/category';
 import post from './schemas/post';
 import author from './schemas/author';
-import video from './schemas/video';
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-	types: [post, author, category, blockContent, video],
+	types: [post, author, category, blockContent],
 };
