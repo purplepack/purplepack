@@ -12,7 +12,7 @@ async function getData() {
 
 export default async function BlogPage() {
 	const data = (await getData()) as PostI[];
-	console.log(data[0]);
+	console.log(data[0].video);
 	return (
 		<Container>
 			<div className='pt-40'>
@@ -41,13 +41,10 @@ export default async function BlogPage() {
 									<div className='text-xl'>
 										{post.title}
 									</div>
-									<div className='line-clamp-2'>
-										{post.overview}
-									</div>
 								</div>
 							</Link>
 						))}
-					{(data.length = 0 && <p>No post show</p>)}
+					{data.length === 0 && <p>No post show</p>}
 				</div>
 			</div>
 		</Container>

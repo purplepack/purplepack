@@ -90,6 +90,14 @@ interface PostI {
 		}[];
 		_type: string;
 	}[];
+	video: {
+		_type: string;
+		asset: {
+			_weak: boolean;
+			_ref: string;
+			_type: string;
+		};
+	};
 	publishedAt: string;
 	author: {
 		_ref: string;
