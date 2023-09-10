@@ -53,3 +53,11 @@ interface Location {
 	state: string;
 	zip: string;
 }
+interface BlogPost{
+  id: string;
+  title: string;
+  date: string;
+  author: string;
+  image: string;
+  content: string;
+}
