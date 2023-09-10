@@ -1,7 +1,8 @@
 export const PROFILE = {
 	name: 'Purple Pack',
 	description: 'Welcome to Purple pack (African, Flavourful, Irresistible)',
-	phone: '2348061719533',
+	phone: '17835046640',
+	address: 'Hallam i-lab, Sheffield Hallam University, Level 6, Aspect Court, Sheffield, S1 2BG',
 };
 
 export const NAVBAR_ITEMS = [
@@ -9,7 +10,7 @@ export const NAVBAR_ITEMS = [
 	{ name: 'CONTACT', href: '/about#contact' },
 	{ name: 'FAQS', href: '/faqs' },
 	{ name: 'KITCHEN', href: '/kitchen' },
-	{ name: 'STORE LOCATOR', href: '/about#store-locator' },
+	// { name: 'STORE LOCATOR', href: '/about#store-locator' },
 ];
 
 export const MENU: FoodI[] = [
@@ -55,7 +56,7 @@ export const MENU: FoodI[] = [
 		],
 	},
 	{
-		name: 'Olori Ofada',
+		name: 'Olori Ofada & Ayamase Sauce',
 		slug: 'olori-ofada',
 		image: '/food/olori-ofada.JPG',
 		hoverImage: '/food/olori-ofada-hover.JPG',
@@ -75,25 +76,25 @@ export const MENU: FoodI[] = [
 			{ name: 'salt', value: '1.5g per serving' },
 		],
 	},
-	{
-		name: 'Ayamase Sauce',
-		slug: 'ayamase-sauce',
-		image: '/image5.JPG',
-		hoverImage: '/image6.JPG',
-		description: `Dive into the rich and comforting flavors of Africa with our authentic Egusi Soup – a delicious blend of tradition and taste that captures the essence of the continent in every spoonful.`,
-		ingredients: `Chicken, Sweet potato, Apple, Wild Rice, Goats cheese [Ingredients: Pasteurized goat's milk, salt, lactic starters, coagulant] (MILK), Yoghurt (MILK), Almonds (NUTS), Lemon Juice, Olive Oil, Balsamic Vinegar (SULPHITES), Mustard (MUSTARD), Honey, Garlic, Lemon Zest, Rapeseed oil, Thyme, Smoked Paprika, Salt, Black pepper, Mixed salad leaf`,
-		price: 9,
-		nutrition: [
-			{ name: 'calories', value: '431kcal' },
-			{ name: 'protein', value: '29.5g' },
-			{ name: 'carbs', value: '44.6g' },
-			{ name: 'fibre', value: '6.1g' },
-			{ name: 'sugar', value: '12.4g' },
-			{ name: 'fat', value: '15.6g' },
-			{ name: 'saturated', value: '3.5g' },
-			{ name: 'salt', value: '0.9g' },
-		],
-	},
+	// {
+	// 	name: 'Ayamase Sauce',
+	// 	slug: 'ayamase-sauce',
+	// 	image: '/image5.JPG',
+	// 	hoverImage: '/image6.JPG',
+	// 	description: `Dive into the rich and comforting flavors of Africa with our authentic Egusi Soup – a delicious blend of tradition and taste that captures the essence of the continent in every spoonful.`,
+	// 	ingredients: `Chicken, Sweet potato, Apple, Wild Rice, Goats cheese [Ingredients: Pasteurized goat's milk, salt, lactic starters, coagulant] (MILK), Yoghurt (MILK), Almonds (NUTS), Lemon Juice, Olive Oil, Balsamic Vinegar (SULPHITES), Mustard (MUSTARD), Honey, Garlic, Lemon Zest, Rapeseed oil, Thyme, Smoked Paprika, Salt, Black pepper, Mixed salad leaf`,
+	// 	price: 9,
+	// 	nutrition: [
+	// 		{ name: 'calories', value: '431kcal' },
+	// 		{ name: 'protein', value: '29.5g' },
+	// 		{ name: 'carbs', value: '44.6g' },
+	// 		{ name: 'fibre', value: '6.1g' },
+	// 		{ name: 'sugar', value: '12.4g' },
+	// 		{ name: 'fat', value: '15.6g' },
+	// 		{ name: 'saturated', value: '3.5g' },
+	// 		{ name: 'salt', value: '0.9g' },
+	// 	],
+	// },
 	{
 		name: 'Banga Soup',
 		slug: 'banga-soup',

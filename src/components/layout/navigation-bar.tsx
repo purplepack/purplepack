@@ -49,14 +49,14 @@ export const Navbar = () => {
 									</Link>
 								</Button>
 							))}
-							<Button
+							{/* <Button
 								asChild
 								variant='ghost'
 							>
 								<Link href='/about#store-locator'>
 									VISIT STORE
 								</Link>
-							</Button>
+							</Button> */}
 						</div>
 						<div className='flex gap-2'>
 							<ModeSwitch />

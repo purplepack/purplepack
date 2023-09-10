@@ -43,11 +43,11 @@ export default function MenuCard({
 			</Link>
 			<Link href={href}>
 				<div className='w-36 md:w-60 text-center p-2 lg:p-3'>
-					<div className='uppercase font-bold text-[12px] md:text-base'>
+					<div className='uppercase font-bold text-[12px] md:text-base line-clamp-1'>
 						{name}
 					</div>
-					<div className='text-xs'>
-						{truncateParagraph(description, 40)}
+					<div className='text-xs line-clamp-2'>
+						{description}
 					</div>
 				</div>
 			</Link>
