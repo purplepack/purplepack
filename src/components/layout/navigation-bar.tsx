@@ -15,7 +15,7 @@ export const Navbar = () => {
 	return (
 		<div
 			className={`w-full bg-primary text-primary-foreground ${
-				!pathname.startsWith('/studio') && 'fixed'
+				!pathname.startsWith('/create') && 'fixed'
 			} z-50`}
 		>
 			<div className='bg-background/80 px-3 py-2'>
