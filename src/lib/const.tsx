@@ -61,7 +61,7 @@ export const ABOUT_CARD = [
 	{
 		image: '/image8.JPG',
 		title: `Our Chefs are your Chefs`,
-		description: `Flavour is at the top of our priority list. We believe that delicious food shouldn’t be kept for Friday nights, BBQ Saturdays or slow cooked Sundays. Our chefs’ skill is making fantastic food that tastes great and does you good everyday. We push the boundaries of pre-made meals, creating food that’s ready for you to bring to perfection in just 5 minutes. We’re looking forward to cooking yours!`,
+		description: `Flavour is at the top of our priority list. We believe that delicious food shouldn’t be kept for Friday nights, BBQ Saturdays or slow cooked Sundays. Our chefs’ skill is making fantastic food that tastes great and does you good everyday. We push the boundaries of pre-made meals, creating healthy food that's ready for you to bring to perfection in just 5 minutes. We’re looking forward to cooking yours!`,
 		bgcolor: `bg-red-500`,
 		txtcolor: `text-black`,
 	},
@@ -75,7 +75,7 @@ export const ABOUT_CARD = [
 	{
 		image: '/image15.JPG',
 		title: `We keep it Fresh`,
-		description: `fresh and odour free palm oil from the finest source. Meat that's moist and tender. Food just tastes better when ingredients are freshly used. we don't add preservatives to keep it that way, instead our clever packaging locks in the flavour till you're ready to devour. Our food packaging are made of 85% recycled plastic and can be reused at home- all reasons to feel good!`,
+		description: `Fresh and odour free palm oil from the finest source. Meat that's moist and tender. Food just tastes better when ingredients are freshly used. we don't add preservatives to keep it that way, instead our clever packaging locks in the flavour till you're ready to devour. Our food packaging are made of 85% recycled plastic and can be reused at home- all reasons to feel good!`,
 		bgcolor: `bg-orange-500`,
 		txtcolor: `text-black`,
 	},

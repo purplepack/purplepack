@@ -96,7 +96,7 @@ export default function AboutPage() {
 			>
 				<Container>
 					<div className=' font-bold flex justify-center text-2xl'>
-						General Enquiries
+						General Enquiries of Feedbacks
 					</div>
 					<Enquiries />
 				</Container>

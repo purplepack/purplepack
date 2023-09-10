@@ -7,7 +7,7 @@ export default function ContactCard({
 	description,
 }: ContactCardI) {
 	return (
-		<div className='flex flex-col justify-start items-center w-full h-60 p-5 hover:border bg-primary rounded-xl'>
+		<div className='flex flex-col justify-start items-center w-full p-3 md:p-5 hover:border bg-primary rounded-xl'>
 			<div className='w-1/3 rounded-full shrink-0 aspect-square bg-white p-3 mb-5'>
 				<Image
 					className='h-full w-full object-contain'

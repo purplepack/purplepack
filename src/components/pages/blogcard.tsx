@@ -7,13 +7,13 @@ import { PortableText } from '@portabletext/react';
 import { urlForImage } from '../../../sanity/lib/image';
 import AuthorCard from '../blog/author-card';
 
-export default function BlogCard({ post }: { post: PostI }) {
+export default function BlogCard({ post, i }: { post: PostI; i: number }) {
 	return (
 		<motion.div
 			className='flex flex-col shrink-0 md:flex-row hover:shadow-xl bg-secondary  rounded-2xl shadow-md overflow-hidden'
 			initial={{ opacity: 0, rotateY: -180 }}
 			animate={{ opacity: 1, rotateY: 0 }}
-			transition={{ duration: 0.1 }}
+			transition={{ duration: 0.1, delay: 0.1 * i }}
 		>
 			<div className=''>
 				<div className='w-full aspect-video'>
