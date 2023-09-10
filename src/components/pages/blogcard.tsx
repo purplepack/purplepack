@@ -27,17 +27,25 @@ export default function BlogCard({ post }: { post: PostI }) {
 				</div>
 				<div className='p-4 max-w-md'>
 					<h1 className='text-xl font-semibold'>{post.title}</h1>
-					<p className='text-gray-500 text-sm mb-2'>
-						{new Date(post._createdAt).toDateString()} by{' '}
-						{post.author.name}
-					</p>
-					<AuthorCard author={post.author} />
+					<div className='flex items-center  justify-between w-full text-gray-500 text-xs mb-2'>
+						<div className=''>
+							<div className='grid'>
+								{new Date(
+									post._createdAt
+								).toDateString()}{' '}
+							</div>
+							<div className='uppercase'>
+								{post.author.name}
+							</div>
+						</div>
+						<AuthorCard author={post.author} />
+					</div>
 					<div className=' line-clamp-2 text-foreground text-xs mb-3'>
 						<PortableText value={post.body} />
 					</div>
 					<Link
 						href={`/blog/${post.slug.current}`}
-						className='text-primary mt-2'
+						className='text-primary mt-2 text-xs uppercase'
 					>
 						Read More
 					</Link>

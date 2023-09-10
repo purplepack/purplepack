@@ -13,22 +13,29 @@ async function getData(slug: string) {
     mainImage,
     body,
     slug,
-    video
   }`;
 	const data = await client.fetch(query);
 	return data;
 }
-const PortableTextImage = ({ value }: any) => {
-	console.log(value);
+const PortableTextImage = ({
+	value,
+}: {
+	value: { asset: {}; alt: string };
+}) => {
 	return (
-		<Image
-			src={urlForImage(value.asset).url()}
-			alt={value.alt || ' '}
-			loading='lazy'
-			width={900}
-			height={300}
-			className='w-full aspect-[22/9] object-cover object-center shadow rounded-2xl'
-		/>
+		<div className='grid shadow-lg rounded-2xl overflow-hidden my-5 border'>
+			<Image
+				src={urlForImage(value.asset).url()}
+				alt={value.alt || ' '}
+				loading='lazy'
+				width={900}
+				height={300}
+				className='mx-auto w-full aspect-[2/1] object-cover object-center'
+			/>
+			<div className='h-10 w-full bg-primary/70 grid place-items-center'>
+				{value.alt}
+			</div>
+		</div>
 	);
 };
 
@@ -38,12 +45,11 @@ export default async function IndividualPost({
 	params: { slug: string };
 }) {
 	const post = (await getData(params.slug)) as PostI;
-	console.log(post);
 	if (!post) {
 		return <div>Blog post not found.</div>;
 	}
 	return (
-		<Container>
+		<div className='mx-auto max-w-3xl'>
 			<div className='py-40 w-full'>
 				<h1 className='text-3xl font-semibold '>{post.title}</h1>
 				<p className='text-gray-500 text-sm mb-2'>
@@ -59,7 +65,7 @@ export default async function IndividualPost({
 						className='w-full h-full object-cover object-center '
 					/>
 				</div>
-				<div className='text-foreground'>
+				<div className='text-foreground flex flex-col gap-5'>
 					<PortableText
 						value={post.body}
 						components={{
@@ -70,6 +76,6 @@ export default async function IndividualPost({
 					/>
 				</div>
 			</div>
-		</Container>
+		</div>
 	);
 }
