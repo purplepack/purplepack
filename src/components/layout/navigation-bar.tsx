@@ -8,10 +8,16 @@ import { NAVBAR_ITEMS, PROFILE } from '@/lib/data';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import React from 'react';
 import { ModeSwitch } from '../mode-switch';
+import { usePathname } from 'next/navigation';
 
 export const Navbar = () => {
+	const pathname = usePathname();
 	return (
-		<div className='w-full bg-primary text-primary-foreground fixed z-50'>
+		<div
+			className={`w-full bg-primary text-primary-foreground ${
+				!pathname.startsWith('/studio') && 'fixed'
+			} z-50`}
+		>
 			<div className='bg-background/80 px-3 py-2'>
 				<Container>
 					<div className='text-foreground grid place-items-center text-xs sm:text-base'>
@@ -49,14 +55,14 @@ export const Navbar = () => {
 									</Link>
 								</Button>
 							))}
-							<Button
+							{/* <Button
 								asChild
 								variant='ghost'
 							>
 								<Link href='/about#store-locator'>
 									VISIT STORE
 								</Link>
-							</Button>
+							</Button> */}
 						</div>
 						<div className='flex gap-2'>
 							<ModeSwitch />

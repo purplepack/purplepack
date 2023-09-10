@@ -101,7 +101,7 @@ export default function AboutPage() {
 					<Enquiries />
 				</Container>
 			</section>
-			<StoreLocator />
+			{/* <StoreLocator /> */}
 		</>
 	);
 }

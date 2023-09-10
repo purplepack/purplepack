@@ -52,29 +52,30 @@ export const NutritionalInformation = [
 export const ABOUT_CARD = [
 	{
 		image: '/image2.JPG',
-		title: 'Our mission: help everyone build good food habits',
-		description: `Information of the founder goes here.`,
+		title: 'Our mission: Healthy eating ',
+		description: `As a food and nutrition scientist, encouraging healthy eating is the best advice you can give to someone however, increased consumption of processed/junk food have led to a shift in dietary pattern. These dietary patterns have adverse effects not only on human health but also on environmental health. Therefore, promoting healthy eating I.e indigenous meals made from scratch is not only crucial in cultural and ecological fields but also in the fight against malnutrition.
+`,
 		bgcolor: `bg-black`,
 		txtcolor: `text-white`,
 	},
 	{
 		image: '/image8.JPG',
 		title: `Our Chefs are your Chefs`,
-		description: `Flavour is at the top of our priority list. We believe that delicious food shouldn’t be kept for Friday nights, BBQ Saturdays or slow cooked Sundays. Our chefs’ skill is making fantastic food that tastes great and does you good everyday. We push the boundaries of pre-made meals, creating food that’s ready for you to bring to perfection in just 3 minutes. We’re looking forward to cooking yours!`,
+		description: `Flavour is at the top of our priority list. We believe that delicious food shouldn’t be kept for Friday nights, BBQ Saturdays or slow cooked Sundays. Our chefs’ skill is making fantastic food that tastes great and does you good everyday. We push the boundaries of pre-made meals, creating food that’s ready for you to bring to perfection in just 5 minutes. We’re looking forward to cooking yours!`,
 		bgcolor: `bg-red-500`,
 		txtcolor: `text-black`,
 	},
 	{
 		image: '/image12.JPG',
 		title: `Feel Good Food every time.`,
-		description: `We set high nutritional standards: with an average of 33g protein and 530 calories, you can order any meal on our menu knowing that it will do you good (45g protein and 700 calories for those of you with the appetite for our large portions). We use quality ingredients, locally sourced where possible, and at least 2 servings of veg per portion. When the food tastes this good, it's easy to build good food habits. Just choose the meals that make YOU happy`,
+		description: `With over 70g Protein in a meal pack of 450g, you can be sure your 1 of 5 a day is complete! These applies to all meals on our menu. We use quality ingredients, natural and locally sourced where possible. When the food tastes this good, it's easy to build good food habits. Just choose the meals that make YOU happy`,
 		bgcolor: `bg-emerald-500`,
 		txtcolor: `text-black`,
 	},
 	{
 		image: '/image15.JPG',
 		title: `We keep it Fresh`,
-		description: `Broccoli with bite. Meat that’s moist and tender. Food just tastes better when it’s fresh. But we don’t add preservatives to keep it that way, instead our clever packaging locks in the flavour for 7 days. Our food trays are made of 85% recycled plastic and the boxes, trays and sleeves are all recyclable - all reasons to feel good!`,
+		description: `fresh and odour free palm oil from the finest source. Meat that's moist and tender. Food just tastes better when ingredients are freshly used. we don't add preservatives to keep it that way, instead our clever packaging locks in the flavour till you're ready to devour. Our food packaging are made of 85% recycled plastic and can be reused at home- all reasons to feel good!`,
 		bgcolor: `bg-orange-500`,
 		txtcolor: `text-black`,
 	},
@@ -84,17 +85,17 @@ export const QUESTION_CARD = [
 	{
 		image: '/images/icon1.webp',
 		title: `EVER CHANGING MENU`,
-		description: `Our chefs add 4 new meals every fortnight.`,
+		description: `By the end of each quarter, we aim to update our kitchen menu to suite all of your authentic nigerian traditional meal needs.`,
 	},
 	{
 		image: '/images/hungry.webp',
 		title: `HUNGRY?`,
-		description: `Upgrade any meal to a larger portion.`,
+		description: `Purchase as many packs as you desire!`,
 	},
 	{
 		image: '/images/fresh.webp',
 		title: `ALWAYS FRESH`,
-		description: `Our clever packaging keeps it fresh for 7 days without preservatives.`,
+		description: `Our clever packaging keeps all flavour locked in till you're ready to burst open with no added preservatives.`,
 	},
 	{
 		image: '/images/charge.webp',
@@ -121,7 +122,7 @@ export const CONTACT_CARD = [
 	},
 	{
 		icon: '/images/meal-icn.webp',
-		title: `Meal Collab`,
-		description: `Are you a chef with a delicious recipe you’d like to collaborate with us on, or is there a dish you want to see on our menu? Contact us.`,
+		title: `Listening ears?`,
+		description: `Is there a dish you are craving and want to see on our menu? Contact us.`,
 	},
 ];
