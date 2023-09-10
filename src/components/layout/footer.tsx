@@ -66,6 +66,9 @@ export default function Footer() {
 									<Twitter />
 								</Link>
 							</div>
+							<p className='font-normal  text-sm mt-2'>
+								{PROFILE.address}
+							</p>
 						</div>
 					</div>
 					{FOOTER_LINKS.map((links, k) => (

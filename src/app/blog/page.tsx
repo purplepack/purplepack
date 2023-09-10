@@ -1,50 +1,33 @@
-import { Container } from '@/components/layout/container';
-import Image from 'next/image';
-import Link from 'next/link';
+import BlogPage from '@/components/pages/blogpage';
 import React from 'react';
-import { urlForImage } from '../../../sanity/lib/image';
 import { client } from '../../../sanity/lib/client';
+import { Container } from '@/components/layout/container';
+
 async function getData() {
-	const query = `*[_type == 'post']`;
+	const query = `*[_type == 'post']{
+    title,
+    _createdAt,
+    author->,
+    mainImage,
+    body,
+    slug,
+    preview->
+  }`;
 	const data = await client.fetch(query);
 	return data;
 }
 
-export default async function BlogPage() {
+export default async function Blog() {
 	const data = (await getData()) as PostI[];
-	console.log(data[0].video);
+	console.log(data);
 	return (
 		<Container>
-			<div className='pt-40'>
-				<h1 className='text-3xl'>All Post</h1>
-				<div className='flex flex-col gap-5'>
-					{data.length > 0 &&
-						data.map((post) => (
-							<Link
-								href={`/blog/${post.slug.current}`}
-								prefetch
-								key={post._id}
-								className='flex gap-2'
-							>
-								<div className='h-40 w-96 rounded-xl overflow-hidden bg-primary'>
-									<Image
-										className='h-full w-full object-center object-cover'
-										src={urlForImage(
-											post.mainImage.asset
-										).url()}
-										height={160}
-										width={384}
-										alt={post.mainImage.alt}
-									/>
-								</div>
-								<div className=''>
-									<div className='text-xl'>
-										{post.title}
-									</div>
-								</div>
-							</Link>
-						))}
-					{data.length === 0 && <p>No post show</p>}
+			<div className='pt-32'>
+				<div className='p-6'>
+					<h1 className='text-3xl font-semibold text-center'>
+						OUR BLOG
+					</h1>
+					<BlogPage posts={data} />
 				</div>
 			</div>
 		</Container>

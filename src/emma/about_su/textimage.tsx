@@ -21,7 +21,7 @@ export default function AboutCard({
 			<div
 				className={`flex flex-col ${bgcolor} text-white items-center justify-center w-full lg:w-7/12 p-10 xl:p-20 gap-10 xl:gap-20`}
 			>
-				<h1 className='text-3xl lg:text-5xl font-bold'>{title}</h1>
+				<h1 className='text-3xl lg:text-5xl font-bold '>{title}</h1>
 				<p className=''>{description}</p>
 			</div>
 		</div>

@@ -53,6 +53,14 @@ interface Location {
 	state: string;
 	zip: string;
 }
+interface BlogPost {
+	id: string;
+	title: string;
+	date: string;
+	author: string;
+	image: string;
+	content: string;
+}
 
 interface PostI {
 	title: string;
@@ -90,19 +98,8 @@ interface PostI {
 		}[];
 		_type: string;
 	}[];
-	video: {
-		_type: string;
-		asset: {
-			_weak: boolean;
-			_ref: string;
-			_type: string;
-		};
-	};
 	publishedAt: string;
-	author: {
-		_ref: string;
-		_type: string;
-	};
+	author: AuthorCardI;
 	categories: string;
 	overview: string;
 	content: any;
@@ -114,5 +111,17 @@ interface PostI {
 		_type: string;
 		current: string;
 	};
-	createdAt: string;
+	_createdAt: Date;
+}
+
+interface AuthorCardI {
+	_id: string;
+	slug: { current: string; _type: string };
+	_createdAt: Date;
+	name: string;
+	bio: any;
+	_updatedAt: string;
+	image: { _type: string; alt: string; asset: {} };
+	_rev: string;
+	_type: string;
 }
