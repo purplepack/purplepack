@@ -23,10 +23,10 @@ export default function PickupSection() {
 							variant='link'
 						>
 							<Link
-								href='/about#store-locator'
+								href={`https://wa.me/${PROFILE.phone}`}
 								className=''
 							>
-								Check Out Locations
+								Click Here
 							</Link>
 						</Button>
 					</div>
@@ -51,7 +51,7 @@ export default function PickupSection() {
 								href={`https://wa.me/${PROFILE.phone}`}
 								className=''
 							>
-								Online support 24/7
+								Click Here
 							</Link>
 						</Button>
 					</div>
@@ -73,10 +73,10 @@ export default function PickupSection() {
 							variant='link'
 						>
 							<Link
-								href='/about#store-locator'
+								href={`https://wa.me/${PROFILE.phone}`}
 								className=''
 							>
-								Check Out Locations
+								Click Here
 							</Link>
 						</Button>
 					</div>
