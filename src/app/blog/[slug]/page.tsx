@@ -49,7 +49,7 @@ export default async function IndividualPost({
 		return <div>Blog post not found.</div>;
 	}
 	return (
-		<div className='mx-auto max-w-3xl'>
+		<div className='mx-auto max-w-3xl px-3 md:px-5'>
 			<div className='py-40 w-full'>
 				<h1 className='text-3xl font-semibold '>{post.title}</h1>
 				<p className='text-gray-500 text-sm mb-2'>
