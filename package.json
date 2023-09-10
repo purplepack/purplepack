@@ -50,6 +50,7 @@
 		"date-fns": "^2.30.0",
 		"eslint": "8.48.0",
 		"eslint-config-next": "13.4.19",
+		"framer-motion": "^10.16.4",
 		"local-storage": "^2.0.0",
 		"lucide-react": "^0.263.1",
 		"next": "13.4.19",

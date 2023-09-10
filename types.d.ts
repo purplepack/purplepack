@@ -53,6 +53,14 @@ interface Location {
 	state: string;
 	zip: string;
 }
+interface BlogPost {
+	id: string;
+	title: string;
+	date: string;
+	author: string;
+	image: string;
+	content: string;
+}
 
 interface PostI {
 	title: string;
@@ -90,14 +98,6 @@ interface PostI {
 		}[];
 		_type: string;
 	}[];
-	video: {
-		_type: string;
-		asset: {
-			_weak: boolean;
-			_ref: string;
-			_type: string;
-		};
-	};
 	publishedAt: string;
 	author: {
 		_ref: string;
