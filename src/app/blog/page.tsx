@@ -4,7 +4,15 @@ import { client } from '../../../sanity/lib/client';
 import { Container } from '@/components/layout/container';
 
 async function getData() {
-	const query = `*[_type == 'post']`;
+	const query = `*[_type == 'post']{
+    title,
+    _createdAt,
+    author->,
+    mainImage,
+    body,
+    slug,
+    video,
+  }`;
 	const data = await client.fetch(query);
 	return data;
 }
@@ -15,8 +23,8 @@ export default async function Blog() {
 		<Container>
 			<div className='pt-32'>
 				<div className='p-6'>
-					<h1 className='text-3xl font-semibold text-center text-black'>
-						PurplePack Blog
+					<h1 className='text-3xl font-semibold text-center'>
+						OUR BLOG
 					</h1>
 					<BlogPage posts={data} />
 				</div>
