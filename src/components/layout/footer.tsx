@@ -32,24 +32,24 @@ export default function Footer() {
 			</div>
 			<Separator className='bg-white h-0.5 lg:flex' />
 			<Container>
+				<Link
+					href='/'
+					className='px-3 md:px-5 pt-3 shrink-0 grow-0 flex flex-col items-center md:items-start justify-center md:justify-start gap-2'
+				>
+					<Image
+						src={'/logo.png'}
+						height={80}
+						width={80}
+						alt={`${PROFILE.name} Logo`}
+						className='w-20 h-20 object-contain'
+					/>
+				</Link>
 				<div className='grid gap-5 grid-cols-10 p-3 md:p-5'>
 					<div className='col-span-10 md:col-span-4'>
+						<div className='flex whitespace-nowrap uppercase text-xl'>
+							{PROFILE.name}
+						</div>
 						<div className='flex flex-col items-center md:items-start justify-start font-bold'>
-							<Link
-								href='/'
-								className='shrink-0 grow-0 flex flex-col items-center md:items-start justify-center md:justify-start gap-2'
-							>
-								<Image
-									src={'/logo.png'}
-									height={80}
-									width={80}
-									alt={`${PROFILE.name} Logo`}
-									className='w-20 h-20 object-contain'
-								/>
-								<div className='flex whitespace-nowrap uppercase text-xl'>
-									{PROFILE.name}
-								</div>
-							</Link>
 							<div className='font-normal pb-3 text-center md:text-start'>
 								{`All you need to do is to pop your frozen
 								ready meal In the microwave and it's
