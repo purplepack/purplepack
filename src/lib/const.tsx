@@ -66,14 +66,14 @@ export const ABOUT_CARD = [
 		txtcolor: `text-black`,
 	},
 	{
-		image: '/image12.JPG',
+		image: '/image23.JPG',
 		title: `Feel Good Food every time.`,
 		description: `With over 70g Protein in a meal pack of 450g, you can be sure your 1 of 5 a day is complete! These applies to all meals on our menu. We use quality ingredients, natural and locally sourced where possible. When the food tastes this good, it's easy to build good food habits. Just choose the meals that make YOU happy`,
 		bgcolor: `bg-emerald-500`,
 		txtcolor: `text-black`,
 	},
 	{
-		image: '/image15.JPG',
+		image: '/image2.JPG',
 		title: `We keep it Fresh`,
 		description: `Fresh and odour free palm oil from the finest source. Meat that's moist and tender. Food just tastes better when ingredients are freshly used. we don't add preservatives to keep it that way, instead our clever packaging locks in the flavour till you're ready to devour. Our food packaging are made of 85% recycled plastic and can be reused at home- all reasons to feel good!`,
 		bgcolor: `bg-orange-500`,
