@@ -13,7 +13,7 @@ export default function HowItWorks() {
 					<div className='flex flex-col md:flex-row gap-5 w-full'>
 						<Card className='w-full aspect-square overflow-hidden'>
 							<Image
-								src='/image20.JPG'
+								src='/image23.JPG'
 								height={400}
 								width={400}
 								alt='How it Works Image'

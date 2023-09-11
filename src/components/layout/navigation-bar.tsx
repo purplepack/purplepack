@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { NAVBAR_ITEMS, PROFILE } from '@/lib/data';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import React from 'react';
-import { ModeSwitch } from '../mode-switch';
+// import { ModeSwitch } from '../mode-switch';
 import { usePathname } from 'next/navigation';
 
 export const Navbar = () => {
@@ -30,7 +30,7 @@ export const Navbar = () => {
 					<div className='flex justify-between items-center gap-3'>
 						<Link
 							href='/'
-							className='h-12 md:h-20 shrink-0 grow-0 flex items-center gap-2'
+							className='h-12 xl:h-20 shrink-0 grow-0 flex items-center gap-2'
 						>
 							<Image
 								src={'/logo.png'}
@@ -65,7 +65,7 @@ export const Navbar = () => {
 							</Button> */}
 						</div>
 						<div className='flex gap-2'>
-							<ModeSwitch />
+							{/* <ModeSwitch /> */}
 							<Sheet>
 								<SheetTrigger asChild>
 									<Button
