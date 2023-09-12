@@ -46,8 +46,8 @@ export default function MealCard({ meal }: { meal: FoodI }) {
 			</Link>
 			<div className='grid text-center w-full items-center gap-3'>
 				<div className='font-bold py-2 text-lg'>{meal.name}</div>
-				<div className='text-xs mb-3'>
-					{truncateParagraph(meal.description, 50)}
+				<div className='text-xs mb-3 line-clamp-1 px-3'>
+					{meal.description}
 				</div>
 			</div>
 			<div className='grid'>

@@ -19,7 +19,6 @@ async function getData() {
 
 export default async function Blog() {
 	const data = (await getData()) as PostI[];
-	console.log(data);
 	return (
 		<Container>
 			<div className='pt-32'>

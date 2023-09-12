@@ -19,7 +19,6 @@ export default function AboutPage() {
 							<AboutCard
 								key={k}
 								bgcolor={card.bgcolor}
-								txtcolor={card.txtcolor}
 								image={card.image}
 								title={card.title}
 								description={card.description}
