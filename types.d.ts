@@ -34,7 +34,6 @@ interface AboutCardI {
 	title: string;
 	description: string;
 	bgcolor: string;
-	txtcolor: string;
 }
 
 interface DataTableProps<TData, TValue> {
