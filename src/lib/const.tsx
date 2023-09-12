@@ -51,33 +51,29 @@ export const NutritionalInformation = [
 
 export const ABOUT_CARD = [
 	{
-		image: '/image2.JPG',
+		image: '/image21.JPG',
 		title: 'Our mission: Healthy eating ',
 		description: `As a food and nutrition scientist, encouraging healthy eating is the best advice you can give to someone however, increased consumption of processed/junk food have led to a shift in dietary pattern. These dietary patterns have adverse effects not only on human health but also on environmental health. Therefore, promoting healthy eating I.e indigenous meals made from scratch is not only crucial in cultural and ecological fields but also in the fight against malnutrition.
 `,
 		bgcolor: `bg-black`,
-		txtcolor: `text-white`,
 	},
 	{
 		image: '/image8.JPG',
 		title: `Our Chefs are your Chefs`,
 		description: `Flavour is at the top of our priority list. We believe that delicious food shouldn’t be kept for Friday nights, BBQ Saturdays or slow cooked Sundays. Our chefs’ skill is making fantastic food that tastes great and does you good everyday. We push the boundaries of pre-made meals, creating healthy food that's ready for you to bring to perfection in just 5 minutes. We’re looking forward to cooking yours!`,
 		bgcolor: `bg-red-500`,
-		txtcolor: `text-black`,
 	},
 	{
 		image: '/image23.JPG',
 		title: `Feel Good Food every time.`,
 		description: `With over 70g Protein in a meal pack of 450g, you can be sure your 1 of 5 a day is complete! These applies to all meals on our menu. We use quality ingredients, natural and locally sourced where possible. When the food tastes this good, it's easy to build good food habits. Just choose the meals that make YOU happy`,
 		bgcolor: `bg-emerald-500`,
-		txtcolor: `text-black`,
 	},
 	{
-		image: '/image2.JPG',
+		image: '/image21.JPG',
 		title: `We keep it Fresh`,
 		description: `Fresh and odour free palm oil from the finest source. Meat that's moist and tender. Food just tastes better when ingredients are freshly used. we don't add preservatives to keep it that way, instead our clever packaging locks in the flavour till you're ready to devour. Our food packaging are made of 85% recycled plastic and can be reused at home- all reasons to feel good!`,
 		bgcolor: `bg-orange-500`,
-		txtcolor: `text-black`,
 	},
 ];
 
