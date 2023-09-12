@@ -66,6 +66,7 @@
 		"react-hook-form": "^7.46.0",
 		"sanity": "^3.16.4",
 		"sanity-plugin-mux-input": "^2.2.3",
+		"sanity-plugin-vercel-deploy": "^3.3.4",
 		"server-only": "^0.0.1",
 		"styled-components": "5.2",
 		"suspend-react": "^0.1.3",
