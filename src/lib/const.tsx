@@ -1,5 +1,3 @@
-import { Description } from '@radix-ui/react-toast';
-
 export const MealGauge = [
 	{ info: 'serving', quantity: '295g' },
 	{ info: 'kcal', quantity: '431' },
