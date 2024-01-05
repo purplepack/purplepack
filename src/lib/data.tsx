@@ -97,10 +97,10 @@ export const MENU: FoodI[] = [
 		],
 	},
 	{
-		name: 'Ayamase Sauce and Ofada Rice',
+		name: 'Ofada Rice and Ayamase Sauce',
 		slug: 'ayamase-and-ofada',
-		image: '/food/olori-ofada.JPG',
-		hoverImage: '/food/olori-ofada-hover.JPG',
+		image: '/food/ofada-rice.png',
+		hoverImage: '/food/ofada-rice-hover.png',
 		description: `Ayamase and Odada Rice is a traditionally cooked blend of spicy green Scotch bonnet peppers and assorted proteins`,
 		has450: true,
 		ingredients: [
@@ -507,8 +507,8 @@ export const MENU: FoodI[] = [
 		],
 	},
 	{
-		name: 'Ogbona',
-		slug: 'ogbona',
+		name: 'Ogbono',
+		slug: 'ogbono',
 		image: '/food/placeholder.jpg',
 		hoverImage: '/food/placeholder.jpg',
 		description: `Dive into the rich and comforting flavors of Africa with our authentic Egusi Soup – a delicious blend of tradition and taste that captures the essence of the continent in every spoonful.`,
