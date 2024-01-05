@@ -15,13 +15,15 @@ export default function ReviewCard({
 	};
 }) {
 	return (
-		<div className='flex-shrink-0 gap-4 w-[80%] md:w-[40%] lg:w-[28%] xl:w-[29%]'>
+		<div className='flex-shrink-0 gap-4 w-[260px] md:w-[40%] lg:w-[25%] xl:w-[22%] shadow-md p-2 rounded-2xl m-2 border border-muted hover: scale-105'>
 			<Avatar className='w-10 h-10 border'>
 				<AvatarImage
 					alt={review.name}
 					src={review.image}
 				/>
-				<AvatarFallback>{getInitials(review.name)}</AvatarFallback>
+				<AvatarFallback>
+					{getInitials(review.name).toUpperCase()}
+				</AvatarFallback>
 			</Avatar>
 			<div className='grid gap-4'>
 				<div className='flex gap-4 items-start'>
@@ -33,7 +35,7 @@ export default function ReviewCard({
 					</div>
 					<ReviewStars rating={review.rating} />
 				</div>
-				<div className='text-sm leading-loose text-gray-500 dark:text-gray-400'>
+				<div className='text-sm leading-loose text-gray-500 dark:text-gray-400 line-clamp-4'>
 					<p>{review.comment}</p>
 				</div>
 			</div>
