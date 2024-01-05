@@ -39,6 +39,20 @@ const PortableTextImage = ({
 	);
 };
 
+export async function generateMetadata({
+	params,
+}: {
+	params: { slug: string };
+}) {
+	const post = (await getData(params.slug)) as PostI;
+	return {
+		title: `${post.title} created on the ${new Date(
+			post._createdAt
+		).toDateString()} by ${post.author.name} - Blog`,
+		description: post.overview,
+	};
+}
+
 export default async function IndividualPost({
 	params,
 }: {

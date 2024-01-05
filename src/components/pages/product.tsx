@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Button } from '../ui/button';
 import {
 	Accordion,
@@ -9,12 +9,20 @@ import {
 	AccordionTrigger,
 } from '../ui/accordion';
 import { Separator } from '../ui/separator';
-import { Table, TableBody, TableCell, TableRow } from '../ui/table';
+import {
+	Table,
+	TableBody,
+	TableCell,
+	TableHead,
+	TableHeader,
+	TableRow,
+} from '../ui/table';
 import { Container } from '../layout/container';
 import Link from 'next/link';
 
 export default function Product({ food }: { food: FoodI }) {
 	const [hovered, setHovered] = React.useState<boolean>(false);
+
 	return (
 		<Container>
 			<div className='pt-32'>
@@ -71,6 +79,22 @@ export default function Product({ food }: { food: FoodI }) {
 									</AccordionTrigger>
 									<AccordionContent>
 										<Table>
+											<TableHeader>
+												<TableRow>
+													<TableHead>
+														EU Label
+														Values
+													</TableHead>
+													<TableHead className='text-right'>
+														Per 100g
+													</TableHead>
+													<TableHead className='text-right'>
+														{food.has450
+															? 'Per 450g'
+															: 'Per 224g'}
+													</TableHead>
+												</TableRow>
+											</TableHeader>
 											<TableBody>
 												{food.nutrition.map(
 													(
@@ -78,17 +102,22 @@ export default function Product({ food }: { food: FoodI }) {
 													) => (
 														<TableRow
 															key={
-																description.name
+																description.label
 															}
 														>
 															<TableCell className='font-normal'>
 																{
-																	description.name
+																	description.label
 																}
 															</TableCell>
 															<TableCell className='text-right'>
 																{
-																	description.value
+																	description.per100g
+																}
+															</TableCell>
+															<TableCell className='text-right'>
+																{
+																	description.per224g
 																}
 															</TableCell>
 														</TableRow>
@@ -103,7 +132,38 @@ export default function Product({ food }: { food: FoodI }) {
 										Full Ingredients
 									</AccordionTrigger>
 									<AccordionContent>
-										{food.ingredients}
+										{food.ingredients.map(
+											(a, b) => (
+												<span key={b}>
+													{`${a.name}`}
+													{a.percentage && (
+														<span className=''>
+															{` (${a.percentage}%)`}
+														</span>
+													)}
+													{a.allergic && (
+														<span className='font-bold'>{` (${a.allergic})`}</span>
+													)}
+													{food
+														.ingredients
+														.length -
+														1 >
+													b
+														? ', '
+														: `. (no added preservatives)`}
+												</span>
+											)
+										)}
+										<div className=' bg-primary/30 px-3 py-1 mt-2'>
+											For{' '}
+											<span className='font-bold uppercase'>
+												allergens
+											</span>{' '}
+											see ingredients in{' '}
+											<span className='font-bold uppercase'>
+												bold
+											</span>
+										</div>
 									</AccordionContent>
 								</AccordionItem>
 							</Accordion>

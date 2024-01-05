@@ -6,8 +6,13 @@ import Enquiries from '@/emma/about_su/enquiries';
 import AboutCard from '@/emma/about_su/textimage';
 import { ABOUT_CARD, CONTACT_CARD, QUESTION_CARD } from '@/lib/const';
 import { PROFILE } from '@/lib/data';
+import { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react';
+
+export const metadata: Metadata = {
+	title: 'About',
+};
 
 export default function AboutPage() {
 	return (

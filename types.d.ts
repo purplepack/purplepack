@@ -3,18 +3,25 @@ interface CartItem {
 	name: string;
 }
 
+interface IngredientI {
+	name: string;
+	percentage: number | null;
+	allergic: string | null;
+}
 interface FoodI {
 	name: string;
 	slug: string;
 	image: string;
 	hoverImage: string;
 	description: string;
-	ingredients: string;
 	price: number;
+	has450?: boolean;
 	nutrition: {
-		name: string;
-		value: string;
+		label: string;
+		per100g: string;
+		per224g: string;
 	}[];
+	ingredients: IngredientI[];
 }
 interface FoodP {
 	name: string;

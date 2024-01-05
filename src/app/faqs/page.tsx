@@ -1,7 +1,12 @@
 import { FaqAccordion } from '@/components/faq-accordion';
 import { Container } from '@/components/layout/container';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import React from 'react';
+
+export const metadata: Metadata = {
+	title: 'FAQs',
+};
 
 export default function Faqs() {
 	return (

@@ -6,11 +6,14 @@ import { Navbar } from '@/components/layout/navigation-bar';
 import Footer from '@/components/layout/footer';
 import { PROFILE } from '@/lib/data';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ['latin'] });
-
 export const metadata: Metadata = {
-	title: PROFILE.name,
+	title: {
+		template: `%s | ${PROFILE.name}`,
+		default: PROFILE.name,
+	},
 	description: `Welcome to ${PROFILE.name} (African, Flavorful, Irresistible)`,
 };
 
@@ -33,6 +36,7 @@ export default function RootLayout({
 					<Navbar />
 					{children}
 					<Analytics />
+					<SpeedInsights />
 					<Footer />
 				</ThemeProvider>
 			</body>
