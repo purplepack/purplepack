@@ -1007,13 +1007,13 @@ export const HOW_IT_WORKS = [
 		step: 2,
 		title: 'Find closest pickup store',
 		description:
-			'Locate the nearest pickup spot for your convenience from the available locations.',
+			'Locate the nearest African shop that stores our chilled/frozen ready meal.',
 	},
 	{
 		step: 3,
 		title: 'Visit store, purchase and pickup ',
 		description:
-			'Visit our friendly store, make your order, and swiftly collect your delicious meal.',
+			'Visit our friendly store, purchase and pick up your favorite delicious ready meal.',
 	},
 	{
 		step: 4,
