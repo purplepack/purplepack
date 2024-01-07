@@ -14,8 +14,8 @@ export default function Footer() {
 					<div className='font-bold flex gap-5 flex-col md:flex-row p-3 items-center justify-between md:justify-around mt-10 text-sm'>
 						<div className='w-32 flex flex-col items-center'>
 							<div className=''>Email us</div>
-							<Link href='mailto:purplepack03@gmail.com'>
-								purplepack03@gmail.com
+							<Link href='mailto:info@purplepack.co.uk'>
+								info@purplepack.co.uk
 							</Link>
 						</div>
 						<Separator className='bg-white h-0.5 w-20 md:h-10 md:w-0.5 lg:flex' />

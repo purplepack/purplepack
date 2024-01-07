@@ -21,7 +21,8 @@ export const Navbar = () => {
 			<div className='bg-background/80 px-3 py-2'>
 				<Container>
 					<div className='text-foreground grid place-items-center text-xs sm:text-base'>
-						Ready to eat in no time
+						Microwave for 5 minutes and it&apos;s ready to
+						eat.
 					</div>
 				</Container>
 			</div>

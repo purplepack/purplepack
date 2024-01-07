@@ -1115,7 +1115,7 @@ export const FAQS = [
 		questions: [
 			{
 				question: 'Do you rotate the menu?',
-				answer: `Our customer an favourites, based on our customer reviews, stay on the menu consistently but we're constantly keeping an eye on reviews to see if any of the new meals will push them out of the top spots!`,
+				answer: `As the business grows, we'll increase production of other meal options on our list.`,
 			},
 		],
 	},
