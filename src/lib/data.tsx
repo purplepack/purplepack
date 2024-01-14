@@ -1019,7 +1019,7 @@ export const HOW_IT_WORKS = [
 		step: 4,
 		title: 'Enjoy your meal',
 		description:
-			'Savor every bite of your flavorful meal from our restaurant – a culinary delight awaits!',
+			'Savor every bite of your flavorful meal from our meal range – a culinary delight awaits!',
 	},
 ];
 

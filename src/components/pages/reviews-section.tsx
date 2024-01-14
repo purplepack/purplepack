@@ -53,13 +53,6 @@ const reviews = [
 		rating: 5,
 		comment: `All I can say is 👍 👍 👍. It was a standout dish. Highly recommended! It was 🔥 🔥 🔥`,
 	},
-	{
-		image: '/food/jollof-rice.JPG',
-		name: 'ap.o***@ gmail.com',
-		time: '2024-01-04T22:30:15.876Z',
-		rating: 4,
-		comment: `The Nigerian Jollof and Chicken was a hit at our dinner! It created a perfect thanksgiving meal. Thumbs up!`,
-	},
 ];
 export default function Reviews() {
 	return (
