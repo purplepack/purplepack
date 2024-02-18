@@ -181,7 +181,7 @@ export const MENU: FoodI[] = [
 		name: 'Ayamase Sauce',
 		slug: 'ayamase-sauce',
 		available: true,
-		image: '/food/olori-ofada.jpg',
+		image: '/food/olori-ofada.JPG',
 		hoverImage: '/food/olori-ofada-hover.JPG',
 		description: `Ayamase Sauce is a traditionally cooked blend of spicy green Scotch bonnet peppers, and assorted proteins`,
 		ingredients: [
