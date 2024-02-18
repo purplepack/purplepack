@@ -17,7 +17,7 @@ export default function MealCard({ meal }: { meal: FoodI }) {
 	return (
 		<Card className='shrink-0 overflow-hidden hover:border-primary hover:shadow-xl transition-all duration-500'>
 			<Link
-				href={`/kitchen/${meal.slug}`}
+				href={`/kitchen/${meal.available ? meal.slug : '#'}`}
 				onMouseEnter={() => setHovered(true)}
 				onMouseLeave={() => setHovered(false)}
 			>

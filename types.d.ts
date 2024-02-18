@@ -9,6 +9,7 @@ interface IngredientI {
 	allergic: string | null;
 }
 interface FoodI {
+	available?: boolean;
 	name: string;
 	slug: string;
 	image: string;

@@ -18,6 +18,7 @@ export const MENU: FoodI[] = [
 	{
 		name: 'Nigerian Egusi Soup',
 		slug: 'nigerian-egusi-soup',
+		available: true,
 		image: '/food/egusi-soup.JPG',
 		hoverImage: '/food/egusi-soup-hover.JPG',
 		description: `Nigerian egusi soup contains a traditionally cooked delicious blend of Melon seeds into puree, garnished with pumpkin leaves, spiced with pepper, seasoning and assorted proteins.`,
@@ -99,9 +100,10 @@ export const MENU: FoodI[] = [
 	{
 		name: 'Ofada Rice and Ayamase Sauce',
 		slug: 'ayamase-and-ofada',
-		image: '/food/ofada-rice.png',
+		available: true,
+		image: '/food/ofada-rice.jpg',
 		hoverImage: '/food/ofada-rice-hover.png',
-		description: `Ayamase and Odada Rice is a traditionally cooked blend of spicy green Scotch bonnet peppers and assorted proteins`,
+		description: `Ayamase and ofada Rice is a traditionally cooked blend of spicy green Scotch bonnet peppers and assorted proteins`,
 		has450: true,
 		ingredients: [
 			{
@@ -178,7 +180,8 @@ export const MENU: FoodI[] = [
 	{
 		name: 'Ayamase Sauce',
 		slug: 'ayamase-sauce',
-		image: '/food/olori-ofada.JPG',
+		available: true,
+		image: '/food/olori-ofada.jpg',
 		hoverImage: '/food/olori-ofada-hover.JPG',
 		description: `Ayamase Sauce is a traditionally cooked blend of spicy green Scotch bonnet peppers, and assorted proteins`,
 		ingredients: [
@@ -257,6 +260,7 @@ export const MENU: FoodI[] = [
 	{
 		name: 'Nigerian Jollof and Chicken',
 		slug: 'jollof-and-chicken',
+		available: true,
 		image: '/food/jollof-rice.JPG',
 		has450: true,
 		hoverImage: '/food/jollof-rice-hover.JPG',
@@ -347,9 +351,10 @@ export const MENU: FoodI[] = [
 	{
 		name: 'Banga Soup',
 		slug: 'banga-soup',
+		available: false,
 		image: '/food/placeholder.jpg',
 		hoverImage: '/food/placeholder.jpg',
-		description: `Dive into the rich and comforting flavors of Africa with our authentic Egusi Soup – a delicious blend of tradition and taste that captures the essence of the continent in every spoonful.`,
+		description: `Coming soon`,
 		ingredients: [
 			{ name: 'Water', percentage: 22, allergic: null },
 			{ name: 'Melon Seeds', percentage: 18.1, allergic: null },
@@ -428,9 +433,10 @@ export const MENU: FoodI[] = [
 	{
 		name: 'Efo Riro',
 		slug: 'efo-riro',
+		available: false,
 		image: '/food/placeholder.jpg',
 		hoverImage: '/food/placeholder.jpg',
-		description: `Dive into the rich and comforting flavors of Africa with our authentic Egusi Soup – a delicious blend of tradition and taste that captures the essence of the continent in every spoonful.`,
+		description: `Coming soon`,
 		ingredients: [
 			{ name: 'Water', percentage: 22, allergic: null },
 			{ name: 'Melon Seeds', percentage: 18.1, allergic: null },
@@ -509,9 +515,10 @@ export const MENU: FoodI[] = [
 	{
 		name: 'Ogbono',
 		slug: 'ogbono',
+		available: false,
 		image: '/food/placeholder.jpg',
 		hoverImage: '/food/placeholder.jpg',
-		description: `Dive into the rich and comforting flavors of Africa with our authentic Egusi Soup – a delicious blend of tradition and taste that captures the essence of the continent in every spoonful.`,
+		description: `Coming soon`,
 		ingredients: [
 			{ name: 'Water', percentage: 22, allergic: null },
 			{ name: 'Melon Seeds', percentage: 18.1, allergic: null },
@@ -590,9 +597,10 @@ export const MENU: FoodI[] = [
 	{
 		name: 'Ewa Agoyin',
 		slug: 'ewa-agoyin',
+		available: false,
 		image: '/food/placeholder.jpg',
 		hoverImage: '/food/placeholder.jpg',
-		description: `Dive into the rich and comforting flavors of Africa with our authentic Egusi Soup – a delicious blend of tradition and taste that captures the essence of the continent in every spoonful.`,
+		description: `Coming soon`,
 		ingredients: [
 			{ name: 'Water', percentage: 22, allergic: null },
 			{ name: 'Melon Seeds', percentage: 18.1, allergic: null },
@@ -671,9 +679,10 @@ export const MENU: FoodI[] = [
 	{
 		name: 'Ifokore Ijebu',
 		slug: 'ifokore-ijebu',
+		available: false,
 		image: '/food/placeholder.jpg',
 		hoverImage: '/food/placeholder.jpg',
-		description: `Dive into the rich and comforting flavors of Africa with our authentic Egusi Soup – a delicious blend of tradition and taste that captures the essence of the continent in every spoonful.`,
+		description: `Coming soon`,
 		ingredients: [
 			{ name: 'Water', percentage: 22, allergic: null },
 			{ name: 'Melon Seeds', percentage: 18.1, allergic: null },
@@ -752,9 +761,10 @@ export const MENU: FoodI[] = [
 	{
 		name: 'Asaro',
 		slug: 'Asaro',
+		available: false,
 		image: '/food/placeholder.jpg',
 		hoverImage: '/food/placeholder.jpg',
-		description: `Dive into the rich and comforting flavors of Africa with our authentic Egusi Soup – a delicious blend of tradition and taste that captures the essence of the continent in every spoonful.`,
+		description: `Coming soon`,
 		ingredients: [
 			{ name: 'Water', percentage: 22, allergic: null },
 			{ name: 'Melon Seeds', percentage: 18.1, allergic: null },
@@ -833,9 +843,10 @@ export const MENU: FoodI[] = [
 	{
 		name: 'Ila Alasepo',
 		slug: 'ila-alasepo',
+		available: false,
 		image: '/food/placeholder.jpg',
 		hoverImage: '/food/placeholder.jpg',
-		description: `Dive into the rich and comforting flavors of Africa with our authentic Egusi Soup – a delicious blend of tradition and taste that captures the essence of the continent in every spoonful.`,
+		description: `Coming soon`,
 		ingredients: [
 			{ name: 'Water', percentage: 22, allergic: null },
 			{ name: 'Melon Seeds', percentage: 18.1, allergic: null },
@@ -914,9 +925,10 @@ export const MENU: FoodI[] = [
 	{
 		name: 'Buka Stew',
 		slug: 'buka-stew',
+		available: false,
 		image: '/food/placeholder.jpg',
 		hoverImage: '/food/placeholder.jpg',
-		description: `Dive into the rich and comforting flavors of Africa with our authentic Egusi Soup – a delicious blend of tradition and taste that captures the essence of the continent in every spoonful.`,
+		description: `Coming soon`,
 		ingredients: [
 			{ name: 'Water', percentage: 22, allergic: null },
 			{ name: 'Melon Seeds', percentage: 18.1, allergic: null },
