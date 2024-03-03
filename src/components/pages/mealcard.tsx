@@ -44,9 +44,11 @@ export default function MealCard({ meal }: { meal: FoodI }) {
 					</Tooltip>
 				</TooltipProvider>
 			</Link>
-			<div className='grid text-center w-full items-center gap-3'>
-				<div className='font-bold py-2 text-lg'>{meal.name}</div>
-				<div className='text-xs mb-3 line-clamp-1 px-3'>
+			<div className='grid text-center w-full items-center gap-2'>
+				<div className='font-bold pt-2 text-lg line-clamp-1'>
+					{meal.name}
+				</div>
+				<div className='text-xs mb-3 line-clamp-2 px-3'>
 					{meal.description}
 				</div>
 			</div>

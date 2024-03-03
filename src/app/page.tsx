@@ -13,8 +13,8 @@ export default function Home() {
 			<PickupSection />
 			<DiscoverSection />
 			<OurStory />
-			<HowItWorks />
 			<Reviews />
+			<HowItWorks />
 			<Why />
 		</main>
 	);

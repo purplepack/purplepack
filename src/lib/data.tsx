@@ -1,6 +1,7 @@
 export const PROFILE = {
-	name: 'Purple Pack',
-	description: 'Welcome to Purple pack (African, Flavourful, Irresistible)',
+	name: 'Purple Pack Foods',
+	description:
+		'Welcome to Purple pack Foods (African, Flavourful, Irresistible)',
 	phone: '447835046640',
 	address: 'Hallam i-lab, Sheffield Hallam University, Level 6, Aspect Court, Sheffield, S1 2BG',
 };

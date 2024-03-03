@@ -9,18 +9,20 @@ import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import React from 'react';
 // import { ModeSwitch } from '../mode-switch';
 import { usePathname } from 'next/navigation';
+import { InfoIcon } from 'lucide-react';
 
 export const Navbar = () => {
 	const pathname = usePathname();
 	return (
 		<div
-			className={`w-full bg-primary text-primary-foreground ${
+			className={`w-full bg-primary/90 text-primary-foreground ${
 				!pathname.startsWith('/studio') && 'fixed'
 			} z-50`}
 		>
 			<div className='bg-background/80 px-3 py-2'>
 				<Container>
-					<div className='text-foreground grid place-items-center text-xs sm:text-base'>
+					<div className='text-foreground flex justify-center items-center gap-2 text-xs sm:text-sm'>
+						<InfoIcon className='h-4 w-4' />
 						Microwave for 5 minutes and it&apos;s ready to
 						eat.
 					</div>
@@ -31,7 +33,7 @@ export const Navbar = () => {
 					<div className='flex justify-between items-center gap-3'>
 						<Link
 							href='/'
-							className='h-12 xl:h-20 shrink-0 grow-0 flex items-center gap-2'
+							className='h-12 shrink-0 grow-0 flex items-center gap-2'
 						>
 							<Image
 								src={'/logo.png'}

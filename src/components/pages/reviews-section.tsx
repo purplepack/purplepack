@@ -1,7 +1,16 @@
+import Image from 'next/image';
 import { Container } from '../layout/container';
 import { Button } from '../ui/button';
 import { ScrollArea, ScrollBar } from '../ui/scroll-area';
 import ReviewCard from './review-card';
+import { Slider } from '../ui/slider';
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
+} from '@/components/ui/carousel';
 
 const reviews = [
 	{
@@ -56,15 +65,38 @@ const reviews = [
 ];
 export default function Reviews() {
 	return (
-		<div className='pt-20 px-5'>
-			<Container>
-				<div className='flex justify-center items-center mb-10'>
-					<h2 className='text-3xl font-bold text-center'>
-						What Our Customers Have To Say
-					</h2>
-				</div>
-			</Container>
-			<ScrollArea className=' max-w-6xl mx-auto pb-5'>
+		<div className='h-[70svh] relative'>
+			<Image
+				src='/review.jpg'
+				alt=''
+				height={1080}
+				width={1920}
+				className='h-full w-full object-cover relative'
+			/>
+			<div className='h-[70svh] absolute bg-black/40 top-0 w-full'>
+				<Container className='h-full py-20 px-14 w-full'>
+					<div className='flex justify-center items-center mb-10'>
+						<h2 className='text-3xl font-bold text-center text-white'>
+							What Our Customers Have To Say
+						</h2>
+					</div>
+					<Carousel className=''>
+						<CarouselContent className='flex items-center h-full'>
+							{reviews.map((a, b) => (
+								<CarouselItem
+									className='flex items-center justify-center'
+									key={b}
+								>
+									<ReviewCard review={a} />
+								</CarouselItem>
+							))}
+						</CarouselContent>
+						<CarouselPrevious className='text-white' />
+						<CarouselNext className='text-white' />
+					</Carousel>
+				</Container>
+			</div>
+			{/* <ScrollArea className=' max-w-6xl mx-auto pb-5'>
 				<div className='flex gap-5 p-3 w-full'>
 					{reviews.map((a, b) => (
 						<ReviewCard
@@ -77,7 +109,7 @@ export default function Reviews() {
 					orientation='horizontal'
 					className='hidden'
 				/>
-			</ScrollArea>
+			</ScrollArea> */}
 		</div>
 	);
 }

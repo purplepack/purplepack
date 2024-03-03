@@ -8,34 +8,66 @@ export default function HeroSection() {
 	return (
 		<div className='h-screen w-full'>
 			<Image
-				src='/hero-image.webp'
+				src='/top.jpg'
 				height={600}
 				width={900}
 				alt='Hero Image'
-				className='w-full h-full object-center object-cover'
+				className='w-full h-full object-bottom object-cover'
 			/>
-			<div className='absolute top-0 left-0 h-screen w-full'>
+			<div className='absolute top-0 left-0 h-screen w-full bg-black/50'>
 				<Container>
-					<div className='h-screen flex flex-col justify-center px-5 text-center md:text-left gap-5 max-w-[600px] text-black'>
-						<div className='text-2xl xl:text-3xl'>
-							Irresistible, Fresh & Authentic
-						</div>
-						<div className=' text-5xl xl:text-7xl font-bold'>
-							Get Your Daily Dose of African Flavors
-						</div>
-						<div className=''>
-							<div className='text-2xl xl:text-3xl mb-3'>
-								Shop Now for Unique African Dishes
+					<div className='h-screen grid lg:grid-cols-2 px-5 text-center md:text-left gap-5 text-white'>
+						<div className='flex flex-col items-center md:items-start justify-center gap-3'>
+							<div className='text-2xl xl:text-3xl'>
+								Irresistible, Fresh & Authentic
 							</div>
-							<Button
-								asChild
-								className='w-48'
-							>
-								<Link href='/kitchen'>
-									EXPLORE OUR MENU
-								</Link>
-							</Button>
+							<div className=' text-5xl xl:text-7xl font-bold'>
+								Get Your Daily Dose of African Flavors
+							</div>
+							<div className=''>
+								<div className='text-2xl xl:text-3xl mb-3'>
+									Shop Now for Unique African Dishes
+								</div>
+								<Button
+									asChild
+									className='w-48'
+								>
+									<Link href='/kitchen'>
+										EXPLORE OUR MENU
+									</Link>
+								</Button>
+							</div>
+							<div className='grid grid-cols-3 gap-3 py-10'>
+								<div className='w-full aspect-square'>
+									<Image
+										src='/new/jollof.png'
+										alt=''
+										height={200}
+										width={200}
+										className='w-full h-full object-contain'
+									/>
+								</div>
+								<div className='w-full aspect-square'>
+									<Image
+										src='/new/egusi.png'
+										alt=''
+										height={200}
+										width={200}
+										className='w-full h-full object-contain'
+									/>
+								</div>
+								<div className='w-full aspect-square'>
+									<Image
+										src='/new/ayamase.png'
+										alt=''
+										height={200}
+										width={200}
+										className='w-full h-full object-contain'
+									/>
+								</div>
+							</div>
 						</div>
+						<div className='hidden lg:flex gap-5'></div>
 					</div>
 				</Container>
 			</div>

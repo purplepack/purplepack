@@ -15,29 +15,27 @@ export default function ReviewCard({
 	};
 }) {
 	return (
-		<div className='flex-shrink-0 gap-4 w-[260px] md:w-[40%] lg:w-[25%] xl:w-[22%] shadow-md p-2 rounded-2xl m-2 border border-muted hover: scale-105'>
-			<Avatar className='w-10 h-10 border'>
-				<AvatarImage
-					alt={review.name}
-					src={review.image}
-				/>
-				<AvatarFallback>
-					{getInitials(review.name).toUpperCase()}
-				</AvatarFallback>
-			</Avatar>
-			<div className='grid gap-4'>
-				<div className='flex gap-4 items-start'>
-					<div className='grid gap-0.5 text-sm'>
-						<h3 className='font-semibold'>{review.name}</h3>
-						<time className='text-sm text-gray-500 dark:text-gray-400'>
-							{timeAgo(review.time)}
-						</time>
-					</div>
+		<div className='gap-4 w-full max-w-md flex flex-col items-center text-center justify-start pt-10 aspect-square shadow-md rounded-full border border-muted bg-white/90'>
+			<div className='flex flex-col items-center justify-center'>
+				<Avatar className='w-20 h-20 border'>
+					<AvatarImage
+						alt={review.name}
+						src={review.image}
+					/>
+					<AvatarFallback className='text-3xl font-bold'>
+						{getInitials(review.name).toUpperCase()}
+					</AvatarFallback>
+				</Avatar>
+				<div className='grid gap-0.5'>
+					<h3 className='font-semibold'>{review.name}</h3>
+					<time className='text-sm text-gray-500 dark:text-gray-400'>
+						{timeAgo(review.time)}
+					</time>
 					<ReviewStars rating={review.rating} />
 				</div>
-				<div className='text-sm leading-loose text-gray-500 dark:text-gray-400 line-clamp-4'>
-					<p>{review.comment}</p>
-				</div>
+			</div>
+			<div className='text-sm leading-loose text-gray-500 dark:text-gray-400 line-clamp-3 px-10'>
+				<p>{review.comment}</p>
 			</div>
 		</div>
 	);

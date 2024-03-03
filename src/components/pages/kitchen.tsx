@@ -9,7 +9,7 @@ export default function KitchenProduct() {
 				<h1 className='font-bold text-3xl text-center'>
 					Our Kitchen
 				</h1>
-				<div className='py-10 grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 md:gap-10 '>
+				<div className='py-10 grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 md:gap-10 '>
 					{MENU.map((meal, i) => (
 						<MealCard
 							key={i}
