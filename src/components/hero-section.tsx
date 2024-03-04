@@ -17,12 +17,12 @@ export default function HeroSection() {
 			<div className='absolute top-0 left-0 h-screen w-full bg-black/50'>
 				<Container>
 					<div className='h-screen grid lg:grid-cols-2 px-5 text-center md:text-left gap-5 text-white'>
-						<div className='flex flex-col items-center md:items-start justify-center gap-3'>
+						<div className='flex flex-col items-center md:items-start justify-center gap-3 pt-10'>
 							<div className='text-2xl xl:text-3xl'>
 								Irresistible, Fresh & Authentic
 							</div>
 							<div className=' text-5xl xl:text-7xl font-bold'>
-								Get Your Daily Dose of African Flavors
+								Get Your Daily Dose of African cuisine
 							</div>
 							<div className=''>
 								<div className='text-2xl xl:text-3xl mb-3'>
