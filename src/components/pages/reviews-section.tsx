@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Container } from '../layout/container';
-import { Button } from '../ui/button';
+import { Button, buttonVariants } from '../ui/button';
 import { ScrollArea, ScrollBar } from '../ui/scroll-area';
 import ReviewCard from './review-card';
 import { Slider } from '../ui/slider';
@@ -11,56 +11,44 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from '@/components/ui/carousel';
+import Link from 'next/link';
+import { cn } from '@/lib/utils';
 
 const reviews = [
 	{
-		image: '/food/egusi-soup.JPG',
-		name: 'Sandra',
-		time: '2023-10-05T10:45:22.123Z',
-		rating: 4,
-		comment: `The Nigerian Egusi Soup was absolutely delicious! Its a rich and flavorful dish. Definitely recommend it.`,
-	},
-	{
-		image: '',
-		name: 'Anonymous',
-		time: '2023-11-04T18:30:55.456Z',
+		image: 'https://lh3.googleusercontent.com/a/ACg8ocJsbaR-cZTi_gHJh-t_th4Ka0XFndEMJpRlzWz5z8gs',
+		name: 'Diarra Kasse',
+		time: '2024-02-18T10:45:22.123Z',
 		rating: 5,
-		comment: `The Ofada Rice and Ayamase Sauce was a delight! Wonderful, tasty and satisfying meal. Will order again!`,
+		comment: `Best Nigerian food ever!! I had the chicken jollof rice and it's delicious and affordable! Was about time that something like this existed in Sheffield!! 10/10`,
 	},
 	{
-		image: '/food/jollof-rice.JPG',
-		name: 'Chuks',
-		time: '2023-12-10T12:10:10.567Z',
+		image: 'https://lh3.googleusercontent.com/a-/ALV-UjWFvFeNTx1hFLli6bjFOHH8qFBkJsGibTosPYQOti8-_ZI',
+		name: 'Absa Kasse',
+		time: '2024-02-20T10:45:22.123Z',
 		rating: 5,
-		comment: `The Nigerian Jollof and Chicken was outstanding! It's a must-try for jollof rice lovers!`,
+		comment: `The food looks amazing. It has a variety of different foods that you can chose from like jollof rice, egusi soup and so much more. I can’t recommend this place enough`,
 	},
 	{
-		image: '',
-		name: 'mop***@ gmail.com',
-		time: '2023-12-03T20:15:37.789Z',
-		rating: 3,
-		comment: `The Ayamase Sauce was good, but I expected a bit more spice. Nevertheless, the assorted proteins was enjoyable.`,
-	},
-	{
-		image: '/food/egusi-soup.JPG',
-		name: 'Aisha Ahmed',
-		time: '2023-12-18T12:10:10.567Z',
-		rating: 4,
-		comment: `I enjoyed every bit of it alongside the pounded yam I ate. All I had to do was heat it.`,
-	},
-	{
-		image: '/food/ofada-rice.png',
-		name: 'Musa Danladi',
-		time: '2023-12-25T12:10:10.567Z',
-		rating: 4,
-		comment: `The Ofada Rice and Ayamase Sauce was a pleasant surprise! Will order again soon!`,
-	},
-	{
-		image: '/food/olori-ofada.JPG',
-		name: 'Sophia Lee',
-		time: '2024-01-02T19:45:30.567Z',
+		image: 'https://lh3.googleusercontent.com/a-/ALV-UjU0MksurmZzdlO2EqBi7b6V3okldMZ8BiKhfpPVZ4hxyr0',
+		name: 'Abayomi Abibat',
+		time: '2024-02-22T10:45:22.123Z',
 		rating: 5,
-		comment: `All I can say is 👍 👍 👍. It was a standout dish. Highly recommended! It was 🔥 🔥 🔥`,
+		comment: `The yummiest meal ever! To think a ready meal will be this tasty is an understatement. I love the jollof rice and chicken.`,
+	},
+	{
+		image: 'https://lh3.googleusercontent.com/a-/ALV-UjU5xbaQOW-3oURZvfuK_BDK3ZY6m8dj0YUP92BaltUItPU',
+		name: 'ADEGOROYE Olatunde E.',
+		time: '2024-02-24T10:45:22.123Z',
+		rating: 5,
+		comment: `This is delicious, I enjoyed every bite of the Ayamase sauce and Ofada Rice. Having this ready meal in Sheffield is simply amazing.`,
+	},
+	{
+		image: 'https://lh3.googleusercontent.com/a/ACg8ocLwUjvVOKL_EujBrs2q1fpyDupZZPIYCilN-6bnNH7c',
+		name: 'EMMANUEL AGIRIGA',
+		time: '2024-02-26T10:45:22.123Z',
+		rating: 5,
+		comment: `Great taste. Very healthy meal and Huge value for money. I really enjoyed it. Thank you Purple Pack`,
 	},
 ];
 export default function Reviews() {
@@ -75,12 +63,12 @@ export default function Reviews() {
 			/>
 			<div className='h-[70svh] absolute bg-black/40 top-0 w-full'>
 				<Container className='h-full py-20 px-14 w-full'>
-					<div className='flex justify-center items-center mb-10'>
+					<div className='flex flex-col justify-center items-center mb-10'>
 						<h2 className='text-3xl font-bold text-center text-white'>
 							What Our Customers Have To Say
 						</h2>
 					</div>
-					<Carousel className=''>
+					<Carousel className='mb-5'>
 						<CarouselContent className='flex items-center h-full'>
 							{reviews.map((a, b) => (
 								<CarouselItem
@@ -94,22 +82,16 @@ export default function Reviews() {
 						<CarouselPrevious className='text-white' />
 						<CarouselNext className='text-white' />
 					</Carousel>
+					<div className='grid place-items-center uppercase'>
+						<Link
+							href='#'
+							className={cn(buttonVariants({}))}
+						>
+							Leave a review
+						</Link>
+					</div>
 				</Container>
 			</div>
-			{/* <ScrollArea className=' max-w-6xl mx-auto pb-5'>
-				<div className='flex gap-5 p-3 w-full'>
-					{reviews.map((a, b) => (
-						<ReviewCard
-							key={b}
-							review={a}
-						/>
-					))}
-				</div>
-				<ScrollBar
-					orientation='horizontal'
-					className='hidden'
-				/>
-			</ScrollArea> */}
 		</div>
 	);
 }
