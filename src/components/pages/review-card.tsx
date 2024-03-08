@@ -34,7 +34,7 @@ export default function ReviewCard({
 					<ReviewStars rating={review.rating} />
 				</div>
 			</div>
-			<div className='text-sm text-gray-500 dark:text-gray-400 shadow-lg px-10 bg-white border py-2 rounded-2xl leading-normal line-clamp-5'>
+			<div className='text-sm md:text-2xl text-gray-500 dark:text-gray-400 shadow-lg md:shadow-none px-10 bg-white md:bg-transparent border md:border-0 py-2 rounded-2xl leading-normal line-clamp-5'>
 				<p>{review.comment}</p>
 			</div>
 		</div>

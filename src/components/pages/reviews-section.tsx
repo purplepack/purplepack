@@ -53,7 +53,7 @@ const reviews = [
 ];
 export default function Reviews() {
 	return (
-		<div className='h-[80svh] relative'>
+		<div className='h-screen relative'>
 			<Image
 				src='/review.jpg'
 				alt=''
@@ -69,7 +69,7 @@ export default function Reviews() {
 						</h2>
 					</div>
 					<Carousel className='mb-5'>
-						<CarouselContent className='flex items-center h-full'>
+						<CarouselContent className='flex items-center justify-center h-full'>
 							{reviews.map((a, b) => (
 								<CarouselItem
 									className='flex items-center justify-center'
