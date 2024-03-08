@@ -53,7 +53,7 @@ const reviews = [
 ];
 export default function Reviews() {
 	return (
-		<div className='h-[70svh] relative'>
+		<div className='h-[80svh] relative'>
 			<Image
 				src='/review.jpg'
 				alt=''
@@ -61,7 +61,7 @@ export default function Reviews() {
 				width={1920}
 				className='h-full w-full object-cover relative'
 			/>
-			<div className='h-[70svh] absolute bg-black/40 top-0 w-full'>
+			<div className='h-full absolute bg-black/40 top-0 w-full'>
 				<Container className='h-full py-20 px-14 w-full'>
 					<div className='flex flex-col justify-center items-center mb-10'>
 						<h2 className='text-3xl font-bold text-center text-white'>
@@ -84,7 +84,7 @@ export default function Reviews() {
 					</Carousel>
 					<div className='grid place-items-center uppercase'>
 						<Link
-							href='#'
+							href='https://g.co/kgs/MqPQCqv'
 							className={cn(buttonVariants({}))}
 						>
 							Leave a review

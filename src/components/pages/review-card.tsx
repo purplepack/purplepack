@@ -26,7 +26,7 @@ export default function ReviewCard({
 						{getInitials(review.name).toUpperCase()}
 					</AvatarFallback>
 				</Avatar>
-				<div className='grid gap-0.5'>
+				<div className='grid gap-1'>
 					<h3 className='font-semibold'>{review.name}</h3>
 					<time className='text-sm text-gray-500 dark:text-gray-400'>
 						{timeAgo(review.time)}
@@ -34,7 +34,7 @@ export default function ReviewCard({
 					<ReviewStars rating={review.rating} />
 				</div>
 			</div>
-			<div className='text-sm leading-loose text-gray-500 dark:text-gray-400 line-clamp-3 px-10'>
+			<div className='text-sm text-gray-500 dark:text-gray-400 shadow-lg px-10 bg-white border py-2 rounded-2xl leading-normal line-clamp-5'>
 				<p>{review.comment}</p>
 			</div>
 		</div>

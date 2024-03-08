@@ -12,20 +12,20 @@ export default function HeroSection() {
 				height={600}
 				width={900}
 				alt='Hero Image'
-				className='w-full h-full object-bottom object-cover'
+				className='w-full h-full object-bottom object-cover object-bottom'
 			/>
-			<div className='absolute top-0 left-0 h-screen w-full bg-black/50'>
+			<div className='absolute top-0 left-0 h-screen w-full bg-gradient-to-b from-black/95 via-black/90 to-black/30'>
 				<Container>
 					<div className='h-screen grid lg:grid-cols-2 px-5 text-center md:text-left gap-5 text-white'>
 						<div className='flex flex-col items-center md:items-start justify-center gap-3 pt-10'>
-							<div className='text-2xl xl:text-3xl'>
+							<div className='text-2xl lg:text-xl xl:text-3xl'>
 								Irresistible, Fresh & Authentic
 							</div>
-							<div className=' text-5xl xl:text-7xl font-bold'>
+							<div className=' text-3xl md:text-4xl xl:text-7xl font-bold'>
 								Get Your Daily Dose of African cuisine
 							</div>
 							<div className=''>
-								<div className='text-2xl xl:text-3xl mb-3'>
+								<div className='text-lg lg:text-2xl xl:text-3xl mb-3'>
 									Shop Now for Unique African Dishes
 								</div>
 								<Button

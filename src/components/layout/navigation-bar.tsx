@@ -21,19 +21,19 @@ export const Navbar = () => {
 		>
 			<div className='bg-background/80 px-3 py-2'>
 				<Container>
-					<div className='text-foreground flex justify-center items-center gap-2 text-xs sm:text-sm'>
+					<div className='text-foreground flex justify-center items-center text-center gap-2 text-[10px] sm:text-sm'>
 						<InfoIcon className='h-4 w-4' />
 						Microwave for 5 minutes and it&apos;s ready to
 						eat.
 					</div>
 				</Container>
 			</div>
-			<div className='px-3 py-2'>
+			<div className='px-3 py-1'>
 				<Container>
 					<div className='flex justify-between items-center gap-3'>
 						<Link
 							href='/'
-							className='h-12 shrink-0 grow-0 flex items-center gap-2'
+							className='h-10 w-10 shrink-0 grow-0 flex items-center gap-2'
 						>
 							<Image
 								src={'/logo.png'}
@@ -68,7 +68,6 @@ export const Navbar = () => {
 							</Button> */}
 						</div>
 						<div className='flex gap-2'>
-							{/* <ModeSwitch /> */}
 							<Sheet>
 								<SheetTrigger asChild>
 									<Button
@@ -76,7 +75,7 @@ export const Navbar = () => {
 										size='icon'
 										className='shrink-0 grow-0 md:hidden'
 									>
-										<HamburgerMenuIcon className='h-6 w-6 ' />
+										<HamburgerMenuIcon className='h-5 w-5 ' />
 									</Button>
 								</SheetTrigger>
 								<SheetContent>
