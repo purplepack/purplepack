@@ -8,11 +8,11 @@ export default function HeroSection() {
 	return (
 		<div className='h-screen w-full'>
 			<Image
-				src='/top.jpg'
+				src='/image6-top.JPG'
 				height={600}
 				width={900}
 				alt='Hero Image'
-				className='w-full h-full object-bottom object-cover object-bottom'
+				className='w-full h-full object-cover object-bottom'
 			/>
 			<div className='absolute top-0 left-0 h-screen w-full bg-gradient-to-b from-black/95 via-black/90 to-black/30'>
 				<Container>

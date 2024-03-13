@@ -29,13 +29,13 @@ const reviews = [
 		rating: 5,
 		comment: `The food looks amazing. It has a variety of different foods that you can chose from like jollof rice, egusi soup and so much more. I can’t recommend this place enough`,
 	},
-	{
-		image: 'https://lh3.googleusercontent.com/a-/ALV-UjU0MksurmZzdlO2EqBi7b6V3okldMZ8BiKhfpPVZ4hxyr0',
-		name: 'Abayomi Abibat',
-		time: '2024-02-22T10:45:22.123Z',
-		rating: 5,
-		comment: `The yummiest meal ever! To think a ready meal will be this tasty is an understatement. I love the jollof rice and chicken.`,
-	},
+	// {
+	// 	image: 'https://lh3.googleusercontent.com/a-/ALV-UjU0MksurmZzdlO2EqBi7b6V3okldMZ8BiKhfpPVZ4hxyr0',
+	// 	name: 'Abayomi Abibat',
+	// 	time: '2024-02-22T10:45:22.123Z',
+	// 	rating: 5,
+	// 	comment: `The yummiest meal ever! To think a ready meal will be this tasty is an understatement. I love the jollof rice and chicken.`,
+	// },
 	{
 		image: 'https://lh3.googleusercontent.com/a-/ALV-UjU5xbaQOW-3oURZvfuK_BDK3ZY6m8dj0YUP92BaltUItPU',
 		name: 'ADEGOROYE Olatunde E.',
@@ -69,7 +69,7 @@ export default function Reviews() {
 						</h2>
 					</div>
 					<Carousel className='mb-5'>
-						<CarouselContent className='flex items-center justify-center h-full'>
+						<CarouselContent className='flex items-center justify-start h-full'>
 							{reviews.map((a, b) => (
 								<CarouselItem
 									className='flex items-center justify-center'
