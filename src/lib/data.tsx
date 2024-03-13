@@ -1095,7 +1095,7 @@ export const FOOTER_LINKS = [
 	{
 		heading: 'Help',
 		links: [
-			{ title: 'Contact Us', href: '/about' },
+			{ title: 'Contact Us', href: '/about#contact' },
 			{ title: 'Faqs', href: '/faqs' },
 		],
 	},
@@ -1104,7 +1104,8 @@ export const FOOTER_LINKS = [
 		links: [
 			{ title: 'Egusi Soup', href: '/kitchen/egusi-soup' },
 			{ title: 'Jollof Rice', href: '/kitchen/jollof-rice' },
-			{ title: 'Ofada Rice', href: '/kitchen/olori-ofada' },
+			{ title: 'Ofada Rice', href: '/kitchen/ayamase-and-ofada' },
+			{ title: 'Ayamase Sauce', href: '/kitchen/ayamase-sauce' },
 		],
 	},
 ];
