@@ -1,8 +1,18 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
 import { Container } from './layout/container';
 import { Button } from './ui/button';
 import Link from 'next/link';
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
+} from './ui/carousel';
+import ReviewCard from './pages/review-card';
+import Autoplay from 'embla-carousel-autoplay';
 
 export default function HeroSection() {
 	return (
@@ -37,7 +47,7 @@ export default function HeroSection() {
 									</Link>
 								</Button>
 							</div>
-							<div className='grid grid-cols-3 gap-3 py-10'>
+							<div className='grid grid-cols-3 gap-3 py-10 lg:hidden'>
 								<div className='w-full aspect-square'>
 									<Image
 										src='/new/jollof.png'
@@ -67,7 +77,39 @@ export default function HeroSection() {
 								</div>
 							</div>
 						</div>
-						<div className='hidden lg:flex gap-5'></div>
+						<div className='hidden lg:flex flex-col items-center justify-center px-3'>
+							<Carousel
+								plugins={[
+									Autoplay({
+										delay: 2000,
+									}),
+								]}
+								className='mb-5'
+							>
+								<CarouselContent className='flex items-center justify-start h-full'>
+									{[
+										'/new/jollof.png',
+										'/new/egusi.png',
+										'/new/ayamase.png',
+									].map((a, b) => (
+										<CarouselItem
+											className='grid place-items-center'
+											key={b}
+										>
+											<div className='w-full aspect-square'>
+												<Image
+													src={a}
+													alt={`purple pack food ${a}`}
+													height={1080}
+													width={1080}
+													className='w-full h-full object-contain'
+												/>
+											</div>
+										</CarouselItem>
+									))}
+								</CarouselContent>
+							</Carousel>
+						</div>
 					</div>
 				</Container>
 			</div>
