@@ -1227,7 +1227,7 @@ export const STORE_LOCATIONS = [
 	},
 	{
 		name: 'Cairo Exotic Foods',
-		address: '567 Nile St, San Francisco, CA 94101',
+		address: '567  Nile St, San Francisco, CA 94101',
 		coordinates: { lat: 37.7749, lon: -122.4194 },
 		city: 'San Francisco',
 		state: 'California',
