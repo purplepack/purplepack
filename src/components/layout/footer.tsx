@@ -51,7 +51,7 @@ export default function Footer() {
 						</div>
 						<div className='flex flex-col items-center md:items-start justify-start font-bold'>
 							<div className='font-normal pb-3 text-center md:text-start'>
-								{`All you need to do is to pop your frozen
+								{`All you need to do is to pop your chilled
 								ready meal In the microwave and it's
 								ready to eat in no time!`}
 							</div>
@@ -63,7 +63,13 @@ export default function Footer() {
 									<Facebook />
 								</Link>
 								<Link href='https://twitter.com/purplepackfoods'>
-									<Twitter />
+									<Image
+										src={'/icons/x.png'}
+										height={80}
+										width={80}
+										alt={`${PROFILE.name} Logo`}
+										className='w-5 h-5 object-contain'
+									/>
 								</Link>
 							</div>
 							<p className='font-normal  text-sm mt-2'>
