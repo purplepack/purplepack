@@ -3,7 +3,8 @@ export const PROFILE = {
 	description:
 		'Welcome to Purple pack Foods (African, Flavourful, Irresistible)',
 	phone: '447835046640',
-	address: 'Hallam i-lab, Sheffield Hallam University, Level 6, Aspect Court, Sheffield, S1 2BG',
+	// address: 'Hallam i-lab, Sheffield Hallam University, Level 6, Aspect Court, Sheffield, S1 2BG',
+	address: '7, solly street, flat 4, Sheffield, Southyorkshire. S1 4DE',
 };
 
 export const NAVBAR_ITEMS = [

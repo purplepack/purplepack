@@ -1,5 +1,6 @@
 {
 	"editor.tabSize": 5,
 	"editor.fontFamily": "'Fira Code'",
-	"editor.fontLigatures": true
+	"editor.fontLigatures": true,
+	"conventionalCommits.scopes": ["address changed"]
 }
